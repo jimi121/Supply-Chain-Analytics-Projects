@@ -238,7 +238,7 @@ The store performance comparison shows that FoodCo Mokola leads on revenue at 11
 
 This page is designed for someone who wants a quick snapshot of the business before diving into the details.
 
-![Executive Overview](images/overview_dashboard.png)
+![Executive Overview](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/overview%20dashboard.PNG)
 
 ---
 
