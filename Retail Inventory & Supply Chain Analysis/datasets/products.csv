@@ -1,0 +1,65 @@
+Product_ID,Product_Name,Category,Supplier_ID,Cost_Price,Unit_Price,Reorder_Level
+PRD001,Coca-Cola 50cl Variant 1,Beverages,SUP010,3305.31,3830.04,37
+PRD002,Coca-Cola 50cl Variant 2,Beverages,SUP011,1450.99,1739.5,26
+PRD003,Pepsi 50cl Variant 1,Beverages,SUP014,3480.49,5089.39,25
+PRD004,Pepsi 50cl Variant 2,Beverages,SUP005,3075.31,3570.82,25
+PRD005,Maltina Variant 1,Beverages,SUP014,1327.6,1761.56,21
+PRD006,Maltina Variant 2,Beverages,SUP002,2937.85,4114.77,64
+PRD007,Eva Water Variant 1,Beverages,SUP003,2861.22,3511.16,57
+PRD008,Eva Water Variant 2,Beverages,SUP004,1607.5,2337.72,68
+PRD009,Peak Milk Variant 1,Dairy,SUP013,4087.35,5699.19,41
+PRD010,Peak Milk Variant 2,Dairy,SUP006,1606.0,1967.93,68
+PRD011,Yoghurt Variant 1,Dairy,SUP001,1881.99,2225.38,26
+PRD012,Yoghurt Variant 2,Dairy,SUP002,1987.2,2524.51,36
+PRD013,Butter Variant 1,Dairy,SUP013,4093.5,5753.03,54
+PRD014,Butter Variant 2,Dairy,SUP007,886.68,1305.91,25
+PRD015,Cheese Variant 1,Dairy,SUP015,2894.59,4169.05,59
+PRD016,Cheese Variant 2,Dairy,SUP014,4461.62,5695.58,32
+PRD017,Pringles Variant 1,Snacks,SUP005,3611.49,4211.14,34
+PRD018,Pringles Variant 2,Snacks,SUP006,3933.42,5879.78,74
+PRD019,Plantain Chips Variant 1,Snacks,SUP011,1394.12,1652.52,37
+PRD020,Plantain Chips Variant 2,Snacks,SUP002,2431.03,3505.4,30
+PRD021,Biscuit Variant 1,Snacks,SUP007,2039.85,2495.4,37
+PRD022,Biscuit Variant 2,Snacks,SUP015,3598.56,4999.27,24
+PRD023,Chocolate Variant 1,Snacks,SUP014,3162.92,3826.81,66
+PRD024,Chocolate Variant 2,Snacks,SUP007,1450.61,1902.9,37
+PRD025,Bread Variant 1,Bakery,SUP011,4950.76,6802.34,55
+PRD026,Bread Variant 2,Bakery,SUP006,1332.19,1683.22,69
+PRD027,Cupcake Variant 1,Bakery,SUP013,3947.2,4855.71,22
+PRD028,Cupcake Variant 2,Bakery,SUP014,4083.72,5269.66,24
+PRD029,Donut Variant 1,Bakery,SUP002,1291.62,1911.62,76
+PRD030,Donut Variant 2,Bakery,SUP001,3674.2,4498.76,51
+PRD031,Meat Pie Variant 1,Bakery,SUP002,2159.47,3174.62,49
+PRD032,Meat Pie Variant 2,Bakery,SUP011,971.5,1164.7,67
+PRD033,Toothpaste Variant 1,Toiletries,SUP014,2938.43,3649.41,57
+PRD034,Toothpaste Variant 2,Toiletries,SUP012,2313.64,3133.22,43
+PRD035,Soap Variant 1,Toiletries,SUP002,1330.81,1995.07,52
+PRD036,Soap Variant 2,Toiletries,SUP006,2619.52,3705.37,75
+PRD037,Shampoo Variant 1,Toiletries,SUP007,815.35,1116.71,70
+PRD038,Shampoo Variant 2,Toiletries,SUP010,3498.26,4753.24,44
+PRD039,Body Cream Variant 1,Toiletries,SUP004,2093.61,3137.57,53
+PRD040,Body Cream Variant 2,Toiletries,SUP009,1481.65,1990.79,80
+PRD041,Detergent Variant 1,Household,SUP007,353.96,496.34,63
+PRD042,Detergent Variant 2,Household,SUP013,4458.51,6299.02,69
+PRD043,Tissue Paper Variant 1,Household,SUP002,3312.52,3938.73,47
+PRD044,Tissue Paper Variant 2,Household,SUP002,1043.34,1201.03,66
+PRD045,Disinfectant Variant 1,Household,SUP008,4416.51,5486.13,52
+PRD046,Disinfectant Variant 2,Household,SUP003,3881.22,5153.05,26
+PRD047,Air Freshener Variant 1,Household,SUP012,4391.44,5508.87,60
+PRD048,Air Freshener Variant 2,Household,SUP001,2686.02,3275.92,43
+PRD049,Baby Wipes Variant 1,Baby Products,SUP011,3883.8,5199.56,69
+PRD050,Baby Wipes Variant 2,Baby Products,SUP003,4635.44,6820.92,58
+PRD051,Diapers Variant 1,Baby Products,SUP012,1823.53,2109.49,79
+PRD052,Diapers Variant 2,Baby Products,SUP010,2006.01,2998.71,71
+PRD053,Baby Lotion Variant 1,Baby Products,SUP011,1745.32,2042.5,76
+PRD054,Baby Lotion Variant 2,Baby Products,SUP003,2966.58,3493.34,66
+PRD055,Baby Powder Variant 1,Baby Products,SUP007,2584.16,3034.38,68
+PRD056,Baby Powder Variant 2,Baby Products,SUP015,2803.72,3347.69,62
+PRD057,Chicken Variant 1,Frozen Foods,SUP013,2533.83,3401.49,36
+PRD058,Chicken Variant 2,Frozen Foods,SUP004,2780.07,3787.31,33
+PRD059,Fish Variant 1,Frozen Foods,SUP011,4665.89,6599.17,64
+PRD060,Fish Variant 2,Frozen Foods,SUP013,1245.41,1568.1,62
+PRD061,Sausage Variant 1,Frozen Foods,SUP001,3354.43,4371.95,53
+PRD062,Sausage Variant 2,Frozen Foods,SUP005,2421.98,2995.42,24
+PRD063,Burger Patty Variant 1,Frozen Foods,SUP003,1889.0,2561.31,34
+PRD064,Burger Patty Variant 2,Frozen Foods,SUP002,3065.67,3533.24,65
