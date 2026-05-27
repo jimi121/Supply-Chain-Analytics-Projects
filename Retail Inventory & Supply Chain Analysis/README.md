@@ -70,7 +70,7 @@ Building the business logic in SQL before touching Power BI meant that all the d
 
 ## SQL Business Analysis
 
-The SQL analysis covers seven business areas. Each section was approached as a standalone business problem with specific questions to answer. The queries, outputs, insights, and recommendations for all seven sections are documented in full in the [SQL Analysis file](analysis/https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/analysis/foodco_sql_analysis.md).
+The SQL analysis covers seven business areas. Each section was approached as a standalone business problem with specific questions to answer. The queries, outputs, insights, and recommendations for all seven sections are documented in full in the [SQL Analysis file](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/analysis/foodco_sql_analysis.md).
 
 
 ### 1. Sales and Profitability
@@ -205,7 +205,7 @@ Running promotions that do not move the needle is a cost without a clear benefit
 
 Promotional strategies should be more targeted and focused on categories that show a measurable response. Alternative formats like bundle deals, limited time discounts, or seasonal campaigns could be tested to see if they perform better than the current approach. Inventory planning should also be coordinated with any promotional activity to make sure the products being promoted are actually available in stock when customers come looking for them. 
 
-> The full SQL analysis with all queries, output tables, and detailed findings for every section above is documented here: [View Full SQL Analysis](analysis/https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/analysis/foodco_sql_analysis.md)
+> The full SQL analysis with all queries, output tables, and detailed findings for every section above is documented here: [View Full SQL Analysis](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/analysis/foodco_sql_analysis.md)
 
 
 ## Power BI Dashboard
