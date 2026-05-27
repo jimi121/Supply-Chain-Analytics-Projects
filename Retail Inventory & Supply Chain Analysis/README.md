@@ -70,7 +70,7 @@ Building the business logic in SQL before touching Power BI meant that all the d
 
 ## SQL Business Analysis
 
-The SQL analysis covers seven business areas. Each section was approached as a standalone business problem with specific questions to answer. The queries, outputs, insights, and recommendations for all seven sections are documented in full in the [SQL Analysis file](analysis/foodco_sql_analysis.md).
+The SQL analysis covers seven business areas. Each section was approached as a standalone business problem with specific questions to answer. The queries, outputs, insights, and recommendations for all seven sections are documented in full in the [SQL Analysis file](analysis/https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/analysis/foodco_sql_analysis.md).
 
 
 ### 1. Sales and Profitability
@@ -205,7 +205,7 @@ Running promotions that do not move the needle is a cost without a clear benefit
 
 Promotional strategies should be more targeted and focused on categories that show a measurable response. Alternative formats like bundle deals, limited time discounts, or seasonal campaigns could be tested to see if they perform better than the current approach. Inventory planning should also be coordinated with any promotional activity to make sure the products being promoted are actually available in stock when customers come looking for them. 
 
-> The full SQL analysis with all queries, output tables, and detailed findings for every section above is documented here: [View Full SQL Analysis](analysis/foodco_sql_analysis.md)
+> The full SQL analysis with all queries, output tables, and detailed findings for every section above is documented here: [View Full SQL Analysis](analysis/https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/analysis/foodco_sql_analysis.md)
 
 
 ## Power BI Dashboard
@@ -223,7 +223,7 @@ The store performance comparison shows that FoodCo Mokola leads on revenue at 11
 
 This page is designed for someone who wants a quick snapshot of the business before diving into the details.
 
-![Executive Overview](images/overview_dashboard.png)
+![Executive Overview](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/overview%20dashboard.PNG)
 
 
 ### Page 2 — Inventory Health and Operational Risk
@@ -234,7 +234,7 @@ The inventory action monitoring table at the bottom of the page flags each produ
 
 This page is designed to drive daily or weekly restocking decisions.
 
-![Inventory Dashboard](images/inventory_dashboard.png)
+![Inventory Dashboard](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/inventory%20dashboard.PNG)
 
 
 ### Page 3 — Supplier and Replenishment Performance
@@ -245,7 +245,7 @@ The replenishment performance summary table gives a side by side view of average
 
 This page is designed to help procurement and supply chain teams have informed conversations with suppliers and make better ordering decisions.
 
-![Supplier Dashboard](images/supplier_dashboard.png)
+![Supplier Dashboard](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/suppliers%20dashboard.PNG)
 
 
 ### Page 4 — Profitability and Promotion Analysis
@@ -256,7 +256,7 @@ Profit margins are relatively consistent across categories, ranging from 26.53 p
 
 This page is designed to help leadership understand not just what sold, but what actually contributed to profitability.
 
-![Profitability Dashboard](images/profitability_dashboard.png)
+![Profitability Dashboard](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/profitability%20dashboard.PNG)
 
 
 ## Key Business Outcomes
@@ -298,21 +298,21 @@ Building the dashboard also took more thought than I expected. It was easy to ad
 
 | File | Description |
 |------|-------------|
-| `datasets/transactions.csv` | Raw transactional data covering sales, stock movements, and stockout records across all five FoodCo branches |
-| `datasets/products.csv` | Product reference data including product names, categories, reorder levels, and expiry information |
-| `datasets/stores.csv` | Store details for all five FoodCo branch locations in Ibadan |
-| `datasets/suppliers.csv` | Supplier information including names, lead times, and product-supplier mappings |
-| `sql/schema_creation.sql` | CREATE TABLE statements and database schema used to structure the FoodCo inventory dataset in PostgreSQL |
-| `sql/data_loading.sql` | Scripts used to import and load the raw dataset into the PostgreSQL database |
-| `sql/analytical_view.sql` | SQL view that aggregates and prepares data for use as the Power BI data source |
-| `sql/business_queries.sql` | All seven business analysis query sets covering sales, inventory, stockouts, expiry, suppliers, restocking, and promotions |
-| `analysis/foodco_sql_analysis.md` | Full written analysis including SQL queries, query outputs, insights, and recommendations for each business question |
-| `dashboard/Retail_Inventory_Dashboard.pbix` | Complete Power BI dashboard file containing all charts, KPIs, and visual reports |
-| `presentation/project_presentation_slides.pptx` | Slide deck summarising the project objectives, key findings, and business recommendations |
-| `images/overview_dashboard.png` | Screenshot of the Power BI overview dashboard showing high-level KPIs and revenue performance |
-| `images/inventory_dashboard.png` | Screenshot of the inventory health dashboard showing stock status, coverage days, and critical stock alerts |
-| `images/supplier_dashboard.png` | Screenshot of the supplier performance dashboard showing lead times and damage rates by supplier |
-| `images/profitability_dashboard.png` | Screenshot of the profitability dashboard showing revenue and profit breakdown by product, category, and store |
+| [`datasets/transactions.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/datasets/transactions.csv) | Raw transactional data covering sales, stock movements, and stockout records across all five FoodCo branches |
+| [`datasets/products.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/datasets/products.csv) | Product reference data including product names, categories, reorder levels, and expiry information |
+| [`datasets/stores.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/datasets/stores.csv) | Store details for all five FoodCo branch locations in Ibadan |
+| [`datasets/suppliers.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/datasets/suppliers.csv) | Supplier information including names, lead times, and product-supplier mappings |
+| [`sql/schema_creation.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/sql/schema_creation.sql) | CREATE TABLE statements and database schema used to structure the FoodCo inventory dataset in PostgreSQL |
+| [`sql/data_loading.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/sql/data_loading.sql) | Scripts used to import and load the raw dataset into the PostgreSQL database |
+| [`sql/analytical_view.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/sql/analytical_view.sql) | SQL view that aggregates and prepares data for use as the Power BI data source |
+| [`sql/business_queries.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/sql/business_queries.sql) | All seven business analysis query sets covering sales, inventory, stockouts, expiry, suppliers, restocking, and promotions |
+| [`analysis/foodco_sql_analysis.md`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/analysis/foodco_sql_analysis.md) | Full written analysis including SQL queries, query outputs, insights, and recommendations for each business question |
+| [`dashboard/Retail_Inventory_Dashboard.pbix`](https://app.powerbi.com/view?r=eyJrIjoiMjE3NmVhNzItYmZhNC00M2YyLWJlOGYtNzAwOTRmMjJiYjRlIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9) | Complete Power BI dashboard file containing all charts, KPIs, and visual reports |
+| [`presentation/project_presentation_slides.pptx`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/presentation/project%20presentation%20sildes.pptx) | Slide deck summarising the project objectives, key findings, and business recommendations |
+| [`images/overview_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/overview%20dashboard.PNG) | Screenshot of the Power BI overview dashboard showing high-level KPIs and revenue performance |
+| [`images/inventory_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/inventory%20dashboard.PNG) | Screenshot of the inventory health dashboard showing stock status, coverage days, and critical stock alerts |
+| [`images/supplier_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/suppliers%20dashboard.PNG) | Screenshot of the supplier performance dashboard showing lead times and damage rates by supplier |
+| [`images/profitability_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analysis/images/profitability%20dashboard.PNG) | Screenshot of the profitability dashboard showing revenue and profit breakdown by product, category, and store |
 
 
 ## Repository Structure
