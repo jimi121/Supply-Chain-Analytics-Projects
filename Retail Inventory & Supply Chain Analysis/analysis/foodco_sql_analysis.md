@@ -1,13 +1,11 @@
 # 🛒 FoodCo Supermarket: Retail Inventory and Supply Chain Analysis
 **Tool:** PostgreSQL &nbsp;|&nbsp; **Author:** Olajimi Adeleke &nbsp;|&nbsp; **Project Type:** Portfolio Project
 
----
 
 > **About This Project**
 >
 > This project is a SQL-based business analysis of FoodCo Supermarket's retail inventory and supply chain operations across five branch locations in Ibadan, Nigeria. The analysis covers seven business areas including sales performance, stock health, supplier quality, and promotion effectiveness. Each section ends with a result summary, key insight, and a practical recommendation that the business can act on.
 
----
 
 ## 📑 Table of Contents
 
@@ -37,13 +35,11 @@
    - [7.2 Categories That Respond Best to Promotions](#72-categories-that-respond-best-to-promotions)
    - [7.3 Customer Demand Level vs Sales and Stockouts](#73-customer-demand-level-vs-sales-and-stockouts)
 
----
 
 ## 1. Sales and Profitability Performance
 
 **Business Objective:** Understand which products, categories, and stores are driving revenue and profit, and identify underperforming areas.
 
----
 
 ### 1.1 Top 10 Best-Selling and Most Profitable Products
 
@@ -93,7 +89,6 @@ Bread, Coca-Cola 50cl, and Meat Pie are the top performers in both revenue and p
 
 These products should always be in stock. Any stockout on Bread or Coca-Cola 50cl directly translates to lost revenue since they are the two biggest earners. Management should set stricter replenishment rules for these items and ensure shelf availability is monitored daily.
 
----
 
 ### 1.2 Category-Level Profitability
 
@@ -137,7 +132,6 @@ Beverages and Bakery are carrying the business from a profitability standpoint. 
 
 Inventory spending and promotional energy should be focused on Beverages and Bakery since that is where the money is. For the Household category, the business should look at expanding the number of products stocked or increasing visibility for the existing two products. There is clearly untapped potential there given the strong margin.
 
----
 
 ### 1.3 Store Performance Comparison
 
@@ -179,13 +173,11 @@ The performance gap across all five stores is actually quite small. The differen
 
 Management should study what Bodija is doing differently in terms of pricing, waste control, or product selection and share those practices with the other stores. For Ring Road specifically, a review of the cost structure and product mix would help identify where the margin is being lost.
 
----
 
 ## 2. Inventory Health and Stock Management
 
 **Business Objective:** Monitor current stock levels and identify products that are overstocked or at risk of stockout.
 
----
 
 ### 2.1 Overall Stock Health
 
@@ -224,7 +216,6 @@ Less than 4% of the inventory is in good shape. That is a serious problem. More 
 
 The business needs automated stock alerts so that inventory managers are notified the moment a product approaches its reorder level. Safety stock calculations also need to be revisited for fast-moving products because clearly the current buffers are not giving enough lead time before stock runs out.
 
----
 
 ### 2.2 Critically Low Stock Products
 
@@ -279,7 +270,6 @@ Dairy and Household products are where the critical stock situations are cluster
 
 Restocking orders for Air Freshener, Butter, Shampoo, and Cheese should go out immediately across all affected stores. For products flagged to remove expired stock first, that clearance has to happen before the restock arrives otherwise the same problem repeats. These products also need more frequent replenishment cycles going forward, not just a one-time top-up.
 
----
 
 ### 2.3 Average Stock Coverage (Days of Stock Left)
 
@@ -335,13 +325,11 @@ The top revenue products are also the ones running out the fastest. Bread has 1.
 
 Safety stock levels need to go up for at least the five products with the lowest coverage: Bread, Coca-Cola 50cl, Maltina Can, Ice Cream, and Yoghurt. Management should also work with suppliers to lock in a consistent delivery schedule for these products so that there is never a situation where a short delay causes a full stockout.
 
----
 
 ## 3. Stockout Analysis
 
 **Business Objective:** Identify how often stockouts occur and their impact on sales and customer satisfaction.
 
----
 
 ### 3.1 Products with Highest Stockout Frequency
 
@@ -402,7 +390,6 @@ A 100% stockout rate for Biscuits means customers looking for this product were 
 
 Biscuits needs immediate and sustained attention. The reorder point and replenishment quantity for this product should be reviewed and fixed right away. For any product with a stockout rate above 50%, the current reorder policy is clearly not working and needs to be replaced with one that is driven by actual daily or weekly sales data rather than fixed order cycles.
 
----
 
 ### 3.2 Stores with Most Stockouts
 
@@ -453,7 +440,6 @@ This requires a chain-wide fix, not just attention to individual stores. Managem
 
 **Business Objective:** Reduce product expiry losses, especially for perishable items.
 
----
 
 ### 4.1 Current Expiry Risk Level
 
@@ -494,7 +480,6 @@ Half the inventory is at risk in some form. The most urgent issue is the 154 alr
 
 Every store needs to pull expired products off shelves immediately. For items expiring within 30 days, targeted promotions like discounts, bundles, or end-of-aisle placements should be used to move them before the date hits. FoodCo should also enforce FIFO (First-In, First-Out) rotation across all branches as a standard practice to stop this problem from continuing.
 
----
 
 ### 4.2 Expired and Expiring Soon Products
 
@@ -550,13 +535,11 @@ The large stock counts on already-expired items are concerning. Meat Pie at Bodi
 
 A full store audit for expired products needs to happen right away at every branch. Going forward, the business should put in place a digital expiry tracking system that sends alerts at 30, 14, and 7 days before expiry for perishable products. For Frozen Foods and Dairy specifically, ordering in smaller quantities more frequently would reduce the amount of product sitting long enough to expire.
 
----
 
 ## 5. Supplier Performance Analysis
 
 **Business Objective:** Evaluate supplier reliability and lead time impact on inventory.
 
----
 
 ### 5.1 Supplier Lead Time and Product Quality
 
@@ -600,7 +583,6 @@ Speed does not guarantee quality here. FreshBake is delivering the fastest but d
 
 Management should sit down with both CoolFresh Logistics and FreshBake Suppliers to review their handling and packaging practices. For CoolFresh specifically, the cold chain during delivery needs to be investigated. A formal performance tracker showing damage rates per supplier per quarter would make it easier to hold them accountable and make data-driven decisions about switching volume if things do not improve.
 
----
 
 ### 5.2 Highest Damage Rates by Supplier and Product
 
@@ -657,13 +639,11 @@ CoolFresh Logistics is the biggest damage problem in FoodCo's supply chain. Ever
 
 A cold chain audit of CoolFresh Logistics is the most urgent action. They are damaging too many products and the financial cost is adding up. For FreshBake Suppliers, better packaging for Meat Pie should be negotiated. Supplier contracts across the board should include clear terms on who bears the cost of damaged goods, and those terms need to actually be enforced.
 
----
 
 ## 6. Replenishment and Restocking Efficiency
 
 **Business Objective:** Improve how we decide when and how much to restock.
 
----
 
 ### 6.1 Restock Quantity vs Actual Sales
 
@@ -721,7 +701,6 @@ The replenishment pattern here is backwards. The slowest-selling products are ge
 
 Restock quantities need to be rebuilt from scratch using actual sales data. A simple rule would be to set restock quantities as the average monthly sales plus a safety buffer of 20 to 30 percent. As a starting point, Butter and Biscuits restock quantities should be cut significantly, and that freed-up budget should go toward increasing orders for Bread and Coca-Cola 50cl.
 
----
 
 ### 6.2 Over-Stocked vs Under-Stocked Products
 
@@ -784,7 +763,6 @@ The fact that no product shows as Under Restocking might look reassuring at firs
 
 A monthly review should compare what was ordered against what was actually sold the previous month for every product. Products in the Over Restocking group should have their order quantities reduced by at least 20 to 30 percent as a starting point. That budget should be redirected to improve supply for products that are consistently running out.
 
----
 
 ### 6.3 Average Restock Quantity by Category
 
@@ -826,13 +804,11 @@ Beverages shows what a healthy restock-to-sales relationship should look like at
 
 The Beverages category should be used as the internal benchmark when setting restock quantities for other categories. For Frozen Foods and Dairy, the shift should be from large bulk deliveries on a fixed schedule to smaller and more frequent orders that better match the pace of sales and reduce how much stock sits long enough to expire.
 
----
 
 ## 7. Promotion and Customer Demand Effectiveness
 
 **Business Objective:** Understand the impact of promotions and demand patterns.
 
----
 
 ### 7.1 Do Promotions Increase Sales?
 
@@ -882,7 +858,6 @@ The current promotions are not working. A difference of less than one unit in av
 
 The current promotional approach needs to be rethought. Instead of broad discounts that anyone can access, the business should test more targeted approaches: time-limited offers on products approaching expiry, bundle deals that pair top sellers with slower-moving items, or loyalty-based rewards for repeat customers. Tracking which promotions actually result in more units sold (not just cheaper units) is the key measurement to focus on.
 
----
 
 ### 7.2 Categories That Respond Best to Promotions
 
@@ -931,7 +906,6 @@ Dairy and Frozen Foods showing positive results from promotions is an interestin
 
 Promotional spending should be concentrated on Dairy and Frozen Foods where there is actual evidence of a positive response. For Household products, promotions should stop until there is a clearer strategy in place. Future promotional decisions should be made based on category-level response data rather than running the same type of campaign across the board.
 
----
 
 ### 7.3 Customer Demand Level vs Sales and Stockouts
 
@@ -974,7 +948,6 @@ This result is surprising and important. You would expect stockouts to be highes
 
 FoodCo needs to move away from fixed-quantity ordering toward a model that adjusts based on recent sales. Even a basic setup where reorder quantities are updated monthly based on the previous month's actual sales would be a significant improvement over what is currently in place. If point-of-sale data is available, it should be feeding directly into the restocking decision rather than being ignored.
 
----
 
 ## Overall Conclusion
 
@@ -998,8 +971,3 @@ Three things need to happen to move the business forward:
 1. **Fix the restocking model.** Restock quantities should be based on actual sales data, not fixed numbers. Fast movers need more stock. Slow movers need less.
 2. **Take expiry seriously.** A digital tracking system with automated alerts is not a luxury at this point. It is necessary. FIFO rotation should be enforced in every store.
 3. **Hold suppliers accountable.** CoolFresh Logistics in particular needs a cold chain audit. Damage costs need to be tracked formally and built into supplier contracts.
-
----
-
-*Analysis conducted using PostgreSQL on the `retail_inventory_optimization_analysis.inventory_supply_chain_analysis` dataset.*  
-*FoodCo Supermarket, Ibadan — Retail Inventory and Supply Chain Portfolio Project.*
