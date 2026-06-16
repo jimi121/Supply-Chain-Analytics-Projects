@@ -165,7 +165,7 @@ The EDA extended the SQL findings into things SQL alone cannot visualise: rollin
 Food, Beverages, and Bakery show the most stable and predictable seasonal patterns. Dairy, Frozen Foods, and Snacks carry larger irregular components, which means their forecasts hold more uncertainty.
 
 <p align="center">
-  <img src="./images/monthly_demand_trend.png" width="85%" alt="Monthly Demand Trend"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/01_daily_demand_trend.png" width="85%" alt="Monthly Demand Trend"/>
   <br><em>Total daily units sold across all 7 stores, Jan 2024 to Jun 2025</em>
 </p>
 
