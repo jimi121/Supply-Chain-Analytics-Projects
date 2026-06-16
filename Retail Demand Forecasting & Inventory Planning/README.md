@@ -170,22 +170,22 @@ Food, Beverages, and Bakery show the most stable and predictable seasonal patter
 </p>
 
 <p align="center">
-  <img src="./images/weekly_monthly_patterns.png" width="85%" alt="Weekly and Monthly Patterns"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/02_demand_timing.png" width="85%" alt="Weekly and Monthly Patterns"/>
   <br><em>Demand by day of week and by month. The festive months stand out clearly.</em>
 </p>
 
 <p align="center">
-  <img src="./images/seasonal_demand_behaviour.png" width="85%" alt="Seasonal Demand Behaviour"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/04_demand_by_regime.png" width="85%" alt="Seasonal Demand Behaviour"/>
   <br><em>Average daily units sold across festive, normal, and inflation periods by category</em>
 </p>
 
 <p align="center">
-  <img src="./images/stockout_rate_analysis.png" width="85%" alt="Stockout Rate Analysis"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/05_stockout_analysis.png" width="85%" alt="Stockout Rate Analysis"/>
   <br><em>Stockout rate per product and per store. Near identical rates across all categories point to a planning problem, not a product problem.</em>
 </p>
 
 <p align="center">
-  <img src="./images/supplier_performance.png" width="85%" alt="Supplier Performance"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/07_supplier_performance.png" width="85%" alt="Supplier Performance"/>
   <br><em>Delivery punctuality and average delay per supplier</em>
 </p>
 
@@ -195,7 +195,7 @@ Food, Beverages, and Bakery show the most stable and predictable seasonal patter
 </p>
 
 <p align="center">
-  <img src="./images/promotion_impact.png" width="85%" alt="Promotion Impact"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/08_promotion_effect.png" width="85%" alt="Promotion Impact"/>
   <br><em>Sales with and without promotions across all categories. Uplift is consistent.</em>
 </p>
 
@@ -214,7 +214,7 @@ Every product was classified across two dimensions before any forecasting began.
 **CZ:** Low revenue and unpredictable demand. Monitor but deprioritise.
 
 <p align="center">
-  <img src="./images/abc_xyz_matrix.png" width="85%" alt="ABC/XYZ Matrix"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/09_abc_xyz_classification.png" width="85%" alt="ABC/XYZ Matrix"/>
   <br><em>ABC/XYZ segmentation matrix showing where each product sits and what that means for planning</em>
 </p>
 
@@ -235,22 +235,22 @@ Three models were tested across all seven categories. Training used the first 14
 Prophet produced the lowest MAPE in 6 of the 7 categories. ARIMA was competitive on Bakery and Snacks. ETS consistently produced the highest errors across all categories. That comparison matters because choosing Prophet by default without testing would miss the cases where ARIMA performs better.
 
 <p align="center">
-  <img src="./images/forecast_diagnostics.png" width="85%" alt="Forecast Diagnostics"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/10_seasonal_decomposition.png" width="85%" alt="Forecast Diagnostics"/>
   <br><em>Seasonal decomposition and autocorrelation checks per category before model selection</em>
 </p>
 
 <p align="center">
-  <img src="./images/category_level_forecasts.png" width="85%" alt="Category Level Forecasts"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/12_category_forecasts.png" width="85%" alt="Category Level Forecasts"/>
   <br><em>12 week forward forecast per category showing historical and projected demand</em>
 </p>
 
 <p align="center">
-  <img src="./images/model_accuracy_comparison.png" width="85%" alt="Model Accuracy Comparison"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/13_model_accuracy.png" width="85%" alt="Model Accuracy Comparison"/>
   <br><em>MAPE comparison across all three models per category. Lower is better.</em>
 </p>
 
 <p align="center">
-  <img src="./images/product_level_forecasts.png" width="85%" alt="Product Level Forecasts"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/14_product_forecasts.png" width="85%" alt="Product Level Forecasts"/>
   <br><em>Product level forecasts for the five highest stockout risk products</em>
 </p>
 
@@ -283,7 +283,7 @@ Every product across every store received a risk classification based on days of
 | 🟣 OVERSTOCK | Over 2.5x reorder point | Hold new orders, check transfers first |
 
 <p align="center">
-  <img src="./images/replenishment_plan.png" width="85%" alt="Replenishment Plan"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/16_reorder_urgency.png" width="85%" alt="Replenishment Plan"/>
   <br><em>Products ranked by reorder urgency with suggested order quantities per store</em>
 </p>
 
@@ -292,7 +292,7 @@ Every product across every store received a risk classification based on days of
 Current stock was compared against the 30 day demand forecast per product. A negative gap means a shortage is arriving before the next delivery. A positive gap means surplus stock that could be transferred rather than reordered.
 
 <p align="center">
-  <img src="./images/inventory_gap_analysis.png" width="85%" alt="Inventory Gap Analysis"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/forecast_vs_inventory_gap.png" width="85%" alt="Inventory Gap Analysis"/>
   <br><em>Inventory gap per product. Negative values flag incoming shortages against forecasted demand.</em>
 </p>
 
