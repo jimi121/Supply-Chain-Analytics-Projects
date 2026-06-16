@@ -1,0 +1,21 @@
+product_id,product_name,category,supplier_id,unit_price,cost_price,shelf_life_days
+1,Indomie Noodles,Food,2,10976,7378.79,200
+2,Peak Milk,Dairy,6,4157,2818.06,13
+3,Milo,Beverages,1,9435,6296.8,276
+4,Golden Penny Spaghetti,Food,5,988,660.71,179
+5,Coca-Cola,Beverages,6,10363,6790.95,161
+6,Maltina,Beverages,2,11147,8809.08,274
+7,Bread,Bakery,7,7859,6034.56,7
+8,Frozen Chicken,Frozen Foods,3,3115,2459.69,28
+9,Ice Cream,Frozen Foods,1,3047,2111.76,28
+10,Yoghurt,Dairy,7,2019,1465.76,29
+11,Butter,Dairy,6,6135,4728.52,9
+12,Detergent,Household,1,8027,6078.41,253
+13,Toilet Tissue,Household,5,9544,6763.22,245
+14,Sausage,Frozen Foods,6,3650,2886.84,9
+15,Rice,Food,7,4233,3405.93,100
+16,Beans,Food,3,4314,3551.7,254
+17,Vegetable Oil,Food,2,7928,6161.14,246
+18,Biscuits,Snacks,6,6565,4733.72,196
+19,Chocolate Drink,Beverages,5,11699,9120.62,147
+20,Cheese,Dairy,3,4510,3078.89,31
