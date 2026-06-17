@@ -273,7 +273,7 @@ Prophet produced the lowest MAPE in 6 of the 7 categories. ARIMA was competitive
 Two safety stock values were calculated per product. The standard version uses demand variability with a fixed assumed lead time. The supplier adjusted version uses each supplier's actual recorded average delay from the delivery data. Products from Naija Frozen Supplies carry a larger buffer than products from Agodi Fresh Farms because the delivery history justifies it. If safety stock assumes punctual delivery and the supplier is late 86% of the time, that safety stock will fail every time.
 
 <p align="center">
-  <img src="./images/safety_stock_comparison.png" width="85%" alt="Safety Stock Comparison"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/15_safety_stock_table.png" width="85%" alt="Safety Stock Comparison"/>
   <br><em>Standard vs supplier adjusted safety stock per product. The gap shows the cost of using assumed lead times.</em>
 </p>
 
@@ -316,7 +316,7 @@ Current stock was compared against the 30 day demand forecast per product. A neg
 Where one branch holds surplus stock and another is running low on the same product, a transfer is faster and cheaper than placing a new supplier order, and it reduces waste at the sending store.
 
 <p align="center">
-  <img src="./images/cross_store_transfers.png" width="85%" alt="Cross Store Transfers"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/19_cross_store_transfer_table.png" width="85%" alt="Cross Store Transfers"/>
   <br><em>Transfer opportunities across all seven branches showing which store sends, which receives, and quantities</em>
 </p>
 
