@@ -463,7 +463,7 @@ Empty shelves, expiring stock, suppliers who never arrive on time, and replenish
 <p align="center">
   <strong>Olajimi Adeleke</strong><br>
   Data Analyst<br><br>
-  <a href="www.linkedin.com/in/olajimi-adeleke">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/olajimi-adeleke">LinkedIn</a>
   &nbsp;&nbsp;
   <a href="https://jimi121.github.io/">GitHub</a>
 </p>
