@@ -465,5 +465,5 @@ Empty shelves, expiring stock, suppliers who never arrive on time, and replenish
   Data Analyst<br><br>
   <a href="https://www.linkedin.com/in/olajimi-adeleke">LinkedIn</a>
   &nbsp;&nbsp;
-  <a href="https://jimi121.github.io/">GitHub</a>
+  <a href="https://jimi121.github.io/">Portfolio</a>
 </p>
