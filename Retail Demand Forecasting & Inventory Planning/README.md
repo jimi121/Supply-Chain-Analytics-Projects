@@ -353,14 +353,14 @@ Comparing three models across seven categories meant 21 accuracy checks. Prophet
 
 | File | Contents |
 |:--|:--|
-| [`datasets/`](./datasets) | Six raw CSV files: stores, products, suppliers, sales, inventory, deliveries |
-| [`sql/schema_creation.sql`](./sql/schema_creation.sql) | Table definitions, constraints, and indexes |
-| [`sql/sql_data_loading.sql`](./sql/sql_data_loading.sql) | Scripts to load all six CSV files into PostgreSQL |
-| [`sql/sql_analytical_views.sql`](./sql/sql_analytical_views.sql) | Four pre-aggregated views used by the Python notebook |
-| [`sql/sql_business_questions.sql`](./sql/sql_business_questions.sql) | All 24 business analysis queries |
-| [`analysis/foodmart_sql_analysis.md`](./analysis.md) | Full SQL analysis with findings and recommendations per section |
-| [`forecasting/demand_forecasting.ipynb`](./demand_forecasting.ipynb) | Complete Python notebook from EDA to inventory planning |
-| [`presentation/foodmart_supply_chain.pdf`](./presentation/foodmart_supply_chain.pptx) | Presentation deck summarising findings and recommendations |
+| [`datasets/`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/tree/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/data) | Six raw CSV files: stores, products, suppliers, sales, inventory, deliveries |
+| [`sql/schema_creation.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/sql/sql_schema_creation.sql) | Table definitions, constraints, and indexes |
+| [`sql/sql_data_loading.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/sql/sql_data_loading.sql) | Scripts to load all six CSV files into PostgreSQL |
+| [`sql/sql_analytical_views.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/sql/sql_analytical_views.sql) | Four pre-aggregated views used by the Python notebook |
+| [`sql/sql_business_questions.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/sql/sql_business_questions.sql) | All 24 business analysis queries |
+| [`analysis/foodmart_sql_analysis.md`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/analysis/foodmart_sql_analysis.md) | Full SQL analysis with findings and recommendations per section |
+| [`forecasting/demand_forecasting.ipynb`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/forecasting/demand_forecasting.ipynb) | Complete Python notebook from EDA to inventory planning |
+| [`presentation/foodmart_supply_chain.pdf`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/presentation/FoodMart_Demand_Forecasting.pdf) | Presentation deck summarising findings and recommendations |
 
 <br>
 
@@ -463,7 +463,7 @@ Empty shelves, expiring stock, suppliers who never arrive on time, and replenish
 <p align="center">
   <strong>Olajimi Adeleke</strong><br>
   Data Analyst<br><br>
-  <a href="https://www.linkedin.com/in/olajimi-adeleke">LinkedIn</a>
+  <a href="www.linkedin.com/in/olajimi-adeleke">LinkedIn</a>
   &nbsp;&nbsp;
-  <a href="https://github.com/Jimi121">GitHub</a>
+  <a href="https://jimi121.github.io/">GitHub</a>
 </p>
