@@ -195,7 +195,7 @@ Food, Beverages, and Bakery show the most stable and predictable seasonal patter
 </p>
 
 <p align="center">
-  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/06_stock_vs_reorder.png" width="85%" alt="Supplier Performance"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/07_supplier_performance.png" width="85%" alt="Supplier Performance"/>
   <br><em>Average delivery delay and on-time delivery rate per supplier</em>
 </p>
 
