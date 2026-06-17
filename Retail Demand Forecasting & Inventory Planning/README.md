@@ -293,12 +293,12 @@ Every product across every store received a risk classification based on days of
 | 🟣 OVERSTOCK | Over 2.5x reorder point | Hold new orders, check transfers first |
 
 <p align="center">
-  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/15_store_level_risk_heatmap.png" width="85%" alt="Days of Inventory Cover"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/16_store_level_risk_heatmap.png" width="85%" alt="Days of Inventory Cover"/>
   <br><em>Days of inventory cover per product per store. Red means critical under 7 days. Green means adequate over 14 days.</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/16_reorder_urgency.png" width="85%" alt="Replenishment Urgency"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/17_reorder_urgency.png" width="85%" alt="Replenishment Urgency"/>
   <br><em>Products requiring reorder today or this week, ranked by days of cover remaining</em>
 </p>
 
@@ -307,7 +307,7 @@ Every product across every store received a risk classification based on days of
 Current stock was compared against the 30 day demand forecast per product. A negative gap means a shortage is arriving before the next delivery. A positive gap means surplus stock that could be transferred rather than reordered.
 
 <p align="center">
-  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/forecast_vs_inventory_gap.png" width="85%" alt="Inventory Gap Analysis"/>
+  <img src="https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/images/18_forecast_vs_inventory_gap.png" width="85%" alt="Inventory Gap Analysis"/>
   <br><em>Inventory gap per product. Negative values flag incoming shortages against the 30 day forecast.</em>
 </p>
 
