@@ -86,7 +86,7 @@ supplier_deliveries.csv  1,000 delivery records with expected and actual dates
 
 All business questions were answered in PostgreSQL before any Python work started. Understanding what the data says comes before building models on top of it.
 
-📄 **[Read the full SQL analysis — 24 queries with findings and recommendations](./analysis.md)**
+📄 **[Read the full SQL analysis — 24 queries with findings and recommendations](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/analysis/foodmart_sql_analysis.md)**
 
 <br>
 
@@ -154,7 +154,7 @@ All business questions were answered in PostgreSQL before any Python work starte
 
 Data was pulled from PostgreSQL into Python via SQLAlchemy. The notebook runs from exploratory analysis through to a complete replenishment plan covering all seven stores.
 
-📓 **[Open the full notebook](./demand_forecasting.ipynb)**
+📓 **[Open the full notebook](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Demand%20Forecasting%20%26%20Inventory%20Planning/forecasting/demand_forecasting.ipynb)**
 
 <br>
 
