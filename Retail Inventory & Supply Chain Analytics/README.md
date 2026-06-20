@@ -45,11 +45,25 @@ FoodCo's inventory data tells a consistent story across seven areas of analysis.
 
 ## Project Workflow
 
-```
-Raw CSV Files  →  PostgreSQL (Schema · Loading · Cleaning)  →  SQL Analytical View  →  Power BI  →  DAX Measures + Calendar Table  →  Dashboard
-```
+```mermaid
+flowchart TD
+    A[📂 Raw CSV Files\n4 tables · transactions · products · stores · suppliers] --> B[PostgreSQL\nSchema · Loading · Cleaning]
+    B --> C[SQL Analytical View\n1 unified reporting dataset]
+    C --> D[7 Business Questions\nSales · Inventory · Stockouts · Expiry · Suppliers · Replenishment · Promotions]
+    D --> E[Power BI]
+    E --> F[DAX Measures + Calendar Table]
+    F --> G[✅ Executive Overview]
+    F --> H[✅ Inventory Health and Operational Risk]
+    F --> I[✅ Supplier and Replenishment Performance]
+    F --> J[✅ Profitability and Promotion Analysis]
 
-Building the business logic in SQL before touching Power BI meant all data preparation and joining happened in one place. The Power BI model only needed to handle visualisation and KPI calculations, which kept the process clean and easy to follow.
+    style A fill:#0F2D57,color:#fff
+    style G fill:#16A34A,color:#fff
+    style H fill:#16A34A,color:#fff
+    style I fill:#16A34A,color:#fff
+    style J fill:#16A34A,color:#fff
+    style E fill:#F2C811,color:#000
+```
 
 <br>
 
