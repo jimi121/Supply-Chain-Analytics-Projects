@@ -324,9 +324,6 @@ retail-inventory-supply-chain-analytics/
 ├── analysis/
 │   └── shelfco_sql_analysis.md
 │
-├── dashboard/
-│   └── Retail_Inventory_Dashboard.pbix
-│
 ├── presentation/
 │   └── project_presentation_slides.pptx
 │
