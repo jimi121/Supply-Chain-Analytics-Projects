@@ -12,7 +12,7 @@
 
 > **Can a retail grocery business see its problems before customers do?**
 >
-> FoodCo runs five branches across Ibadan, Nigeria. Stockouts are happening even during low demand periods. Perishable products are expiring while sitting in the same stores that keep reordering them. And promotions are running without any measurable return.
+> ShelfCo runs five branches across Ibadan, Nigeria. Stockouts are happening even during low demand periods. Perishable products are expiring while sitting in the same stores that keep reordering them. And promotions are running without any measurable return.
 >
 > This project works through those problems across seven business areas, starting from raw CSV files, moving through PostgreSQL analysis, and ending with a four page Power BI dashboard that turns inventory data into decisions any operations team can act on immediately.
 
@@ -20,7 +20,7 @@
 
 ## Executive Summary
 
-FoodCo's inventory data tells a consistent story across seven areas of analysis. A small group of fast moving products drives most of the revenue, yet the entire inventory is operating at low or critical stock levels. The 38.2 percent stockout rate is not a demand problem. Stockouts are happening during low demand periods, which points directly to planning and replenishment failures. Perishable categories are simultaneously the most over ordered and the most at risk of expiry. Supplier damage rates are highest for frozen and fragile goods. Promotions are generating minimal additional revenue across most categories. Every one of these findings has a clear, data backed recommendation attached to it.
+ShelfCo's inventory data tells a consistent story across seven areas of analysis. A small group of fast moving products drives most of the revenue, yet the entire inventory is operating at low or critical stock levels. The 38.2 percent stockout rate is not a demand problem. Stockouts are happening during low demand periods, which points directly to planning and replenishment failures. Perishable categories are simultaneously the most over ordered and the most at risk of expiry. Supplier damage rates are highest for frozen and fragile goods. Promotions are generating minimal additional revenue across most categories. Every one of these findings has a clear, data backed recommendation attached to it.
 
 <br>
 
@@ -39,7 +39,7 @@ FoodCo's inventory data tells a consistent story across seven areas of analysis.
 | Highest restock to sales ratio | Butter at 5.5x |
 | Supplier with longest lead time | CoolFresh Logistics at 6 days average |
 | Top revenue category | Beverages at 14.4 million naira |
-| Top revenue store | FoodCo Mokola at 11.25 million naira |
+| Top revenue store | ShelfCo Mokola at 11.25 million naira |
 
 <br>
 
@@ -98,7 +98,7 @@ Which products and categories are generating the most revenue and profit, and ho
 
 **What the data showed**
 
-Bread leads revenue across all stores, followed by Coca Cola, Meat Pie, and Maltina Can. Beverages and Bakery are the top two categories by both revenue and profit. Store performance is broadly balanced, with FoodCo Akobo and FoodCo Mokola edging slightly ahead.
+Bread leads revenue across all stores, followed by Coca Cola, Meat Pie, and Maltina Can. Beverages and Bakery are the top two categories by both revenue and profit. Store performance is broadly balanced, with ShelfCo Akobo and ShelfCo Mokola edging slightly ahead.
 
 **What this means for the business**
 
@@ -138,7 +138,7 @@ Which products and stores are experiencing the most stockouts, and whether the c
 
 **What the data showed**
 
-Biscuits recorded a 100 percent stockout rate. Butter and Frozen Fish were close behind. FoodCo Jericho and FoodCo Akobo had the highest store level stockout rates at 40.8 percent and 40.4 percent. Stockouts were also occurring during periods of low customer demand.
+Biscuits recorded a 100 percent stockout rate. Butter and Frozen Fish were close behind. ShelfCo Jericho and ShelfCo Akobo had the highest store level stockout rates at 40.8 percent and 40.4 percent. Stockouts were also occurring during periods of low customer demand.
 
 **What this means for the business**
 
@@ -242,7 +242,7 @@ The dashboard follows a logical flow from overall performance, to inventory risk
 
 ### Page 1 — Executive Overview
 
-A high level picture of how the business is performing across all five stores. Covers total revenue, profit, profit margin, stockout rate, and the percentage of products currently at risk. FoodCo Mokola leads on revenue at 11.25 million naira while FoodCo Akobo leads on profit at 3 million naira. Beverages is the top revenue category at 14.4 million naira, followed by Bakery at 11.8 million naira.
+A high level picture of how the business is performing across all five stores. Covers total revenue, profit, profit margin, stockout rate, and the percentage of products currently at risk. ShelfCo Mokola leads on revenue at 11.25 million naira while ShelfCo Akobo leads on profit at 3 million naira. Beverages is the top revenue category at 14.4 million naira, followed by Bakery at 11.8 million naira.
 
 ![Executive Overview](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/overview%20dashboard.PNG)
 
@@ -286,11 +286,11 @@ Building the dashboard also took more thought than expected. Adding more charts 
 
 | File | Description |
 |:--|:--|
-| [`datasets/transactions.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/transactions.csv) | Raw transactional data covering sales, stock movements, and stockout records across all five FoodCo branches |
+| [`datasets/transactions.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/transactions.csv) | Raw transactional data covering sales, stock movements, and stockout records across all five ShelfCo branches |
 | [`datasets/products.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/products.csv) | Product reference data including names, categories, reorder levels, and expiry information |
-| [`datasets/stores.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/stores.csv) | Store details for all five FoodCo branch locations in Ibadan |
+| [`datasets/stores.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/stores.csv) | Store details for all five ShelfCo branch locations in Ibadan |
 | [`datasets/suppliers.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/suppliers.csv) | Supplier information including names, lead times, and product supplier mappings |
-| [`sql/schema_creation.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/schema_creation.sql) | CREATE TABLE statements and database schema for the FoodCo inventory dataset in PostgreSQL |
+| [`sql/schema_creation.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/schema_creation.sql) | CREATE TABLE statements and database schema for the ShelfCo inventory dataset in PostgreSQL |
 | [`sql/data_loading.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/data_loading.sql) | Scripts to import and load the raw dataset into the PostgreSQL database |
 | [`sql/analytical_view.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/analytical_view.sql) | SQL view that aggregates and prepares data for use as the Power BI data source |
 | [`sql/business_queries.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/business_queries.sql) | All seven business analysis query sets covering sales, inventory, stockouts, expiry, suppliers, restocking, and promotions |
@@ -355,7 +355,7 @@ retail-inventory-supply-chain-analytics/
 
 ## About This Project
 
-This is a personal portfolio project. The data is simulated and FoodCo is a fictional grocery chain. The problems it represents are not fictional.
+This is a personal portfolio project. The data is simulated and ShelfCo is a fictional grocery chain. The problems it represents are not fictional.
 
 Empty shelves, expiring stock, suppliers sending damaged goods, and replenishment decisions made without looking at what actually sold. These things are happening in real retail businesses right now. This project shows what changes when you use the data to make those decisions.
 
