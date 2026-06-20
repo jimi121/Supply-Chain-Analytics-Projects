@@ -1,5 +1,5 @@
 --Retail Inventory & Supply Chain Analysis Project
---FoodCo Supermarket – Ibadan
+--ShelfCo Supermarket – Ibadan
 
 --*******************************************************************************************************
 
