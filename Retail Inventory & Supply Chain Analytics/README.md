@@ -236,7 +236,7 @@ After completing the SQL analysis, a four page Power BI dashboard was built to p
 
 The dashboard follows a logical flow from overall performance, to inventory risks, to supplier operations, to profitability.
 
-🔗 **[View the full interactive Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjE3NmVhNzItYmZhNC00M2YyLWJlOGYtNzAwOTRmMjJiYjRlIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9)**
+🔗 **[View the full interactive Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2M0ZmJhYjYtODE2Yi00YmU1LWJkZTktMWY1YmFmNTYwMmQ1IiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9)**
 
 <br>
 
