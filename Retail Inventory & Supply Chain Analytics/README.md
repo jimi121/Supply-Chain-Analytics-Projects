@@ -1,319 +1,294 @@
 # Retail Inventory and Supply Chain Analytics
 
-**Excel · PostgreSQL · Power BI · DAX · PowerPoint**
+<p align="center">
+  <img src="https://img.shields.io/badge/Excel-Data%20Preparation-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-Business%20Analysis-0F2D57?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+  <img src="https://img.shields.io/badge/DAX-KPI%20Measures-E8622A?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Complete-16A34A?style=for-the-badge"/>
+</p>
 
-## The Story Behind This Project
+<br>
 
-I was thinking about a common problem in retail grocery stores. You walk in to buy something you need, and it is not on the shelf. Or the opposite happens where a product sits there too long and eventually gets thrown away before anyone buys it. Both situations cost the business money, and both can be reduced with better data.
+> **Can a retail grocery business see its problems before customers do?**
+>
+> FoodCo runs five branches across Ibadan, Nigeria. Stockouts are happening even during low demand periods. Perishable products are expiring while sitting in the same stores that keep reordering them. And promotions are running without any measurable return.
+>
+> This project works through those problems across seven business areas, starting from raw CSV files, moving through PostgreSQL analysis, and ending with a four page Power BI dashboard that turns inventory data into decisions any operations team can act on immediately.
 
-That got me thinking. What if I could use data to spot these problems before they happen? Which products are about to run out? Which ones are being ordered too much? Are the suppliers delivering on time? Are promotions actually working or just running in the background without making any real difference?
+<br>
 
-I decided to build a project around those questions. I simulated a dataset that reflects how a multi-store retail grocery business like FoodCo operates, and I used it to run a full inventory and supply chain analysis.
+## Executive Summary
 
-The project combines SQL analysis in PostgreSQL with an interactive Power BI dashboard to turn raw inventory data into real business insights.
+FoodCo's inventory data tells a consistent story across seven areas of analysis. A small group of fast moving products drives most of the revenue, yet the entire inventory is operating at low or critical stock levels. The 38.2 percent stockout rate is not a demand problem. Stockouts are happening during low demand periods, which points directly to planning and replenishment failures. Perishable categories are simultaneously the most over ordered and the most at risk of expiry. Supplier damage rates are highest for frozen and fragile goods. Promotions are generating minimal additional revenue across most categories. Every one of these findings has a clear, data backed recommendation attached to it.
 
+<br>
 
-## What This Project Is About
+## Key Numbers at a Glance
 
-The project looks at seven areas that matter in any retail supply chain operation. Each area was treated as a real business problem with its own questions, findings, and recommendations.
+| Metric | Value |
+|:--|:--|
+| Number of stores | 5 branches across Ibadan |
+| Overall stockout rate | 38.2% |
+| Products at critical stock levels | 458 out of all stock records reviewed |
+| Products at low stock levels | 384 |
+| Products at healthy stock levels | 37 |
+| Shortest stock coverage | Bread and Coca Cola at 1.6 to 4 days remaining |
+| Already expired products | 154 |
+| Expiring within 30 days | 301 |
+| Highest restock to sales ratio | Butter at 5.5x |
+| Supplier with longest lead time | CoolFresh Logistics at 6 days average |
+| Top revenue category | Beverages at 14.4 million naira |
+| Top revenue store | FoodCo Mokola at 11.25 million naira |
 
-**Sales and Profitability**
-Which products and categories are bringing in the most revenue and profit, and how the five stores compare to each other in terms of financial performance.
+<br>
 
-**Inventory Health**
-How much stock is available across the stores right now, which products are running dangerously low, and how many days of coverage remain before shelves go empty.
+## Project Workflow
 
-**Stockout Risk**
-Which products go out of stock the most frequently, which stores are struggling the most with availability, and whether the shortages are happening because of high customer demand or because of how restocking is being managed.
+```
+Raw CSV Files  →  PostgreSQL (Schema · Loading · Cleaning)  →  SQL Analytical View  →  Power BI  →  DAX Measures + Calendar Table  →  Dashboard
+```
 
-**Expiry and Inventory Waste**
-Which perishable products are expiring before they get sold, which categories carry the most expiry risk, and what can be done to reduce the losses.
+Building the business logic in SQL before touching Power BI meant all data preparation and joining happened in one place. The Power BI model only needed to handle visualisation and KPI calculations, which kept the process clean and easy to follow.
 
-**Supplier Performance**
-How long each supplier takes to deliver, which ones are sending goods that arrive damaged, and which supplier and product combinations are causing the most operational problems.
+<br>
 
-**Replenishment Efficiency**
-Whether products are being restocked in the right quantities relative to how much is actually being sold, and where over-ordering is creating unnecessary cost and waste.
+## The Data
 
-**Promotion Effectiveness**
-Whether running promotions is actually driving more sales or whether the revenue difference between promotional and non-promotional periods is too small to justify the effort.
-
-
-## Dataset
-
-The dataset was built specifically for this project to simulate realistic retail inventory conditions across a multi-store grocery business. It is not real company data.
-
-The simulation was designed to reflect the kinds of challenges that actually show up in retail operations, things like demand and supply mismatches, perishable product mismanagement, over-ordering, and supplier inconsistency. The goal was to make the analysis meaningful rather than working with perfectly clean, unrealistic numbers.
-
-The project uses four main tables.
+The dataset was built specifically for this project to simulate realistic retail inventory conditions across a multi store grocery business. It is not real company data. The simulation was designed to reflect the kinds of challenges that actually appear in retail operations: demand and supply mismatches, perishable product mismanagement, over ordering, and supplier inconsistency.
 
 | Table | Description |
-|-------|-------------|
+|:--|:--|
 | `products` | Product names, categories, and pricing information |
 | `stores` | The five store locations and their details |
 | `suppliers` | Supplier names, lead times, and operational data |
 | `inventory_supply_chain_analysis` | The main table covering inventory levels, sales, replenishment quantities, expiry dates, damage records, and stockout flags |
 
-Rather than loading all four tables separately into Power BI, a SQL analytical view was created in PostgreSQL to join and prepare everything into one clean reporting dataset. This kept the Power BI model simple and made the DAX measures easier to manage.
+Rather than loading all four tables separately into Power BI, a SQL analytical view was created in PostgreSQL to join and prepare everything into one clean reporting dataset.
 
-
-## Data Modeling Approach
-
-The workflow followed a clear step by step process from raw data to final dashboard.
-
-```
-Raw CSV Files  →  PostgreSQL (Schema + Data Loading + Cleaning)  →  SQL Analytical View  →  Power BI  →  DAX Measures + Calendar Table  →  Dashboard
-```
-
-Building the business logic in SQL before touching Power BI meant that all the data preparation and joining happened in one place. The Power BI model only needed to focus on visualization and KPI calculations, which made the whole process cleaner and easier to follow.
-
+<br>
 
 ## SQL Business Analysis
 
-The SQL analysis covers seven business areas. Each section was approached as a standalone business problem with specific questions to answer. The queries, outputs, insights, and recommendations for all seven sections are documented in full in the [SQL Analysis file](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/foodco_sql_analysis.md).
+The SQL analysis covers seven business areas. Each section was approached as a standalone business problem with specific questions to answer.
 
+📄 **[Read the full SQL analysis with all queries, outputs, and findings](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/foodco_sql_analysis.md)**
+
+<br>
 
 ### 1. Sales and Profitability
 
 **What I was trying to find out**
 
-Which products are generating the most revenue and profit, which categories are leading the business, and whether all five stores are performing at a similar level.
+Which products and categories are generating the most revenue and profit, and how the five stores compare in financial performance.
 
 **What the data showed**
 
-Bread leads with the highest revenue across all stores, followed by Coca-Cola, Meat Pie, and Maltina Can. Beverages and Bakery are the top two categories by both revenue and profit. Store performance is relatively balanced, although FoodCo Akobo and FoodCo Mokola edge slightly ahead of the others.
+Bread leads revenue across all stores, followed by Coca Cola, Meat Pie, and Maltina Can. Beverages and Bakery are the top two categories by both revenue and profit. Store performance is broadly balanced, with FoodCo Akobo and FoodCo Mokola edging slightly ahead.
 
 **What this means for the business**
 
-A small group of fast-moving products is carrying a large share of the business performance. That means if any of those products go out of stock, the impact on revenue will be immediate. The business needs to treat these products as a priority and make sure they are always available on the shelf.
+A small group of products is carrying a large share of business performance. Losing any of them to a stockout has an immediate revenue impact.
 
 **Recommendations**
 
-Fast-moving products like Bread, Coca-Cola, and Meat Pie should receive closer inventory monitoring and faster replenishment cycles. High-performing categories like Beverages and Bakery deserve more inventory investment. Operational practices from the stronger stores can also be studied and applied to locations that are slightly behind.
+Products like Bread, Coca Cola, and Meat Pie need closer monitoring and faster replenishment cycles. High performing categories deserve more inventory investment. Stronger stores can serve as operational benchmarks for locations that are slightly behind.
 
+<br>
 
 ### 2. Inventory Health
 
 **What I was trying to find out**
 
-What the current stock condition looks like across all products and stores, and how much time is left before critical products run out completely.
+What the current stock condition looks like across all products and stores, and how much time is left before critical products run out.
 
 **What the data showed**
 
-Out of all the stock records reviewed, 458 are at critical levels, 384 are at low stock, and only 37 are actually healthy. That means the vast majority of the inventory is in a vulnerable state. Several fast-moving products like Bread and Coca-Cola have only between 1.6 and 4 days of stock coverage remaining.
+458 stock records are at critical levels, 384 are low, and only 37 are healthy. Products like Bread and Coca Cola have between 1.6 and 4 days of coverage remaining.
 
 **What this means for the business**
 
-When almost everything is running low at the same time, the business has very little room to absorb any delay from a supplier or an unexpected spike in demand. Products with only a few days of coverage are one disruption away from going out of stock completely.
+When almost everything is running low at the same time, the business has no room to absorb a supplier delay or an unexpected spike in demand.
 
 **Recommendations**
 
-Inventory monitoring needs to become more proactive rather than reactive. Reorder levels should be reviewed regularly based on how fast each product actually sells. Safety stock for high-demand products should be higher to create a buffer against delays.
+Inventory monitoring needs to shift from reactive to proactive. Reorder levels should be reviewed regularly against actual sales velocity, and safety stock for high demand products should be increased to create a real buffer.
 
+<br>
 
 ### 3. Stockout Risk
 
 **What I was trying to find out**
 
-Which products and stores are experiencing the most stockouts, and whether the problem is coming from customer demand or from how replenishment is being planned.
+Which products and stores are experiencing the most stockouts, and whether the cause is demand or planning.
 
 **What the data showed**
 
-Biscuits recorded a 100 percent stockout rate, meaning it was out of stock every single time it was checked. Butter and Frozen Fish were not far behind. Bakery, Dairy, and Frozen Food products experienced the most frequent stockouts overall. FoodCo Jericho and FoodCo Akobo had the highest stockout rates among the five stores at 40.8 percent and 40.4 percent. Stockouts were also happening during periods of low customer demand, which was an important finding.
+Biscuits recorded a 100 percent stockout rate. Butter and Frozen Fish were close behind. FoodCo Jericho and FoodCo Akobo had the highest store level stockout rates at 40.8 percent and 40.4 percent. Stockouts were also occurring during periods of low customer demand.
 
 **What this means for the business**
 
-If stockouts were only happening during high demand periods, the fix would be to order more during busy times. But since they are happening even when demand is low, the problem is in the replenishment planning itself. Products are not being reordered at the right time or in the right quantities, and that is creating gaps that should not exist.
+Stockouts during low demand periods cannot be explained by volume. The replenishment process itself is the problem. Products are not being reordered at the right time or in the right quantities.
 
 **Recommendations**
 
-Replenishment timing and order quantities need to be reviewed, especially for Bakery, Dairy, and Frozen Food products. Stores with consistently high stockout rates like Jericho and Akobo need closer attention. The goal should be to reorder earlier and in quantities that better reflect actual sales patterns.
+Replenishment timing and order quantities need review, particularly for Bakery, Dairy, and Frozen Food products. Stores with persistently high stockout rates need closer operational attention.
 
+<br>
 
 ### 4. Expiry and Inventory Waste
 
 **What I was trying to find out**
 
-How much inventory is expiring before it gets sold, which products and categories are most at risk, and whether over-ordering is making the problem worse.
+How much inventory is expiring before it sells, which categories carry the most risk, and whether over ordering is making it worse.
 
 **What the data showed**
 
-154 products are already expired and 301 more are expiring within the next 30 days. Dairy and Frozen Foods carry the highest expiry exposure, with products like Butter, Cheese, Yoghurt, Frozen Fish, and Ice Cream appearing most frequently in the at-risk list. The same products that are expiring are also some of the most over-ordered products in the dataset.
+154 products have already expired and 301 more are expiring within 30 days. Dairy and Frozen Foods carry the highest exposure. The same products appearing most often in the expiry risk list are also among the most over ordered in the dataset.
 
 **What this means for the business**
 
-Over-ordering perishable products and then watching them expire is one of the most avoidable losses a retail business can have. The data suggests that replenishment quantities for Dairy and Frozen Food products are not being tied closely enough to actual sales rates, which means stock is piling up faster than it can be sold.
+Over ordering perishables and then watching them expire is one of the most avoidable losses in retail. Replenishment quantities are not being tied closely enough to actual sales rates.
 
 **Recommendations**
 
-Replenishment quantities for perishable products should be reviewed regularly and matched to how fast those products actually move. Stock rotation practices need to be tightened so older stock gets sold before newer deliveries pile on top of it. Near-expiry products should be supported with targeted discounts or promotions before they cross the expiry date and become a complete loss.
+Order quantities for perishable products should be matched to real sales movement on a rolling basis. Stock rotation needs to be tightened so older inventory sells first. Near expiry products should be supported with targeted discounts before they become a complete write off.
 
+<br>
 
 ### 5. Supplier Performance
 
 **What I was trying to find out**
 
-How suppliers compare in terms of delivery speed and product quality, and which supplier and product combinations are causing the most operational problems.
+How suppliers compare on delivery speed and product quality, and which combinations are causing the most operational problems.
 
 **What the data showed**
 
-CoolFresh Logistics has the longest average lead time at 6 days, while FreshBake Suppliers and CoolFresh Logistics both recorded the highest rates of damaged goods on arrival. Products like Meat Pie, Frozen Fish, and Ice Cream are most frequently affected by damage during transit.
+CoolFresh Logistics has the longest average lead time at 6 days. FreshBake Suppliers and CoolFresh Logistics both recorded the highest rates of damaged goods on arrival. Meat Pie, Frozen Fish, and Ice Cream are the products most frequently affected by transit damage.
 
 **What this means for the business**
 
-The problem with suppliers is not so much about how long they take on average, since most lead times are within a reasonable range. The bigger concern is damage rates, especially for frozen and perishable products. Products arriving damaged are not just a financial loss on that delivery. They also create unexpected stock gaps that can quickly turn into stockouts.
+The bigger concern is not lead time length but damage rates, especially for frozen and perishable products. Damaged deliveries create stock gaps that quickly turn into stockouts.
 
 **Recommendations**
 
-Damaged inventory should be tracked more consistently and fed back to suppliers as part of regular performance conversations. For fragile and perishable products, packaging and transportation handling standards should be discussed with the relevant suppliers. Supplier performance should be reviewed periodically using concrete data rather than general impressions.
+Damaged inventory should be tracked consistently and fed back to suppliers in regular performance reviews. Packaging and handling standards for fragile products should be discussed directly with the relevant suppliers.
 
+<br>
 
 ### 6. Replenishment Efficiency
 
 **What I was trying to find out**
 
-Whether products are being restocked in quantities that match actual sales demand, or whether some products are being massively over-ordered.
+Whether products are being restocked in quantities that match actual demand, or whether over ordering is creating unnecessary cost and waste.
 
 **What the data showed**
 
-Several products have restock to sales ratios well above 2, meaning they are being ordered at more than double the rate they are being sold. Butter has a ratio of 5.5, Biscuits at 3.9, Cheese at 3.2, and Frozen Fish at 3.1. The Dairy and Frozen Foods categories show the worst overall replenishment imbalance.
+Several products have restock to sales ratios well above 2. Butter sits at 5.5, Biscuits at 3.9, Cheese at 3.2, and Frozen Fish at 3.1. Dairy and Frozen Foods show the worst overall replenishment imbalance.
 
 **What this means for the business**
 
-Over-ordering creates a chain of problems. It fills up storage space, increases the risk of expiry, ties up money in stock that is not moving, and makes it harder to spot which products genuinely need more attention. Restocking should be driven by sales data, not habit or assumption.
+Over ordering fills storage space, increases expiry risk, ties up cash in stock that is not moving, and makes it harder to identify products that genuinely need attention.
 
 **Recommendations**
 
-Replenishment quantities should be reviewed against recent sales performance on a rolling basis. Products with consistently high restock to sales ratios should have their order quantities reduced and monitored more closely. Demand forecasting should become a regular part of the replenishment process rather than an afterthought.
+Order quantities should be reviewed against recent sales performance on a rolling basis. Products with consistently high restock to sales ratios should have their volumes reduced and monitored closely. Demand forecasting should become a standard input to the replenishment process.
 
+<br>
 
 ### 7. Promotion Effectiveness
 
 **What I was trying to find out**
 
-Whether the promotions being run are actually generating more sales, or whether the business is spending on promotions without seeing a meaningful return.
+Whether promotions are generating meaningful additional sales or running without a measurable return.
 
 **What the data showed**
 
-The revenue difference between promotional and non-promotional periods is small across most categories. Dairy and Frozen Foods responded slightly better to promotions compared to the others, but the overall lift was not significant. Stockouts were also still happening during low-demand periods, which reinforced the finding from the replenishment analysis that inventory problems are largely planning related.
+The revenue difference between promotional and non promotional periods is small across most categories. Dairy and Frozen Foods responded slightly better than others, but the overall lift was not significant.
 
 **What this means for the business**
 
-Running promotions that do not move the needle is a cost without a clear benefit. If certain categories respond better than others, it makes sense to concentrate promotional effort there rather than spreading it evenly across everything.
+Running promotions that do not move the needle is a cost without a clear benefit. Spreading promotional effort evenly across all categories is not the right approach when some categories respond and others do not.
 
 **Recommendations**
 
-Promotional strategies should be more targeted and focused on categories that show a measurable response. Alternative formats like bundle deals, limited time discounts, or seasonal campaigns could be tested to see if they perform better than the current approach. Inventory planning should also be coordinated with any promotional activity to make sure the products being promoted are actually available in stock when customers come looking for them. 
+Promotional strategies should be focused on categories that show a measurable response. Bundle deals, limited time discounts, or seasonal campaigns could be tested as alternatives. Any promotional activity should be coordinated with inventory planning to make sure the promoted products are actually available in stock.
 
-> The full SQL analysis with all queries, output tables, and detailed findings for every section above is documented here: [View Full SQL Analysis](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/foodco_sql_analysis.md)
-
+<br>
 
 ## Power BI Dashboard
 
-After completing the SQL analysis, a four page Power BI dashboard was built to present the findings in a way that is easy to understand and act on. The goal was not to show as many charts as possible but to make sure each page answered a clear business question.
+After completing the SQL analysis, a four page Power BI dashboard was built to present the findings in a way that is easy to understand and act on. Each page answers a specific business question rather than simply displaying charts.
 
-The dashboard follows a logical flow from overall performance, to inventory risks, to supplier operations, to profitability. You can explore the full interactive dashboard here: [View Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjE3NmVhNzItYmZhNC00M2YyLWJlOGYtNzAwOTRmMjJiYjRlIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9)
+The dashboard follows a logical flow from overall performance, to inventory risks, to supplier operations, to profitability.
 
+🔗 **[View the full interactive Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjE3NmVhNzItYmZhNC00M2YyLWJlOGYtNzAwOTRmMjJiYjRlIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9)**
+
+<br>
 
 ### Page 1 — Executive Overview
 
-This page gives a high level picture of how the business is performing across all five stores. It covers total revenue, profit, profit margin, stockout rate, and the percentage of products currently classified as at risk.
-
-The store performance comparison shows that FoodCo Mokola leads on revenue at 11.25 million naira while FoodCo Akobo leads on profit at 3 million naira. Beverages is the top revenue category at 14.4 million naira, followed by Bakery at 11.8 million naira.
-
-This page is designed for someone who wants a quick snapshot of the business before diving into the details.
+A high level picture of how the business is performing across all five stores. Covers total revenue, profit, profit margin, stockout rate, and the percentage of products currently at risk. FoodCo Mokola leads on revenue at 11.25 million naira while FoodCo Akobo leads on profit at 3 million naira. Beverages is the top revenue category at 14.4 million naira, followed by Bakery at 11.8 million naira.
 
 ![Executive Overview](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/overview%20dashboard.PNG)
 
+<br>
 
 ### Page 2 — Inventory Health and Operational Risk
 
-This page goes deeper into the stock condition across the business. It shows how many products are at critical, low, or healthy stock levels by category, which stores have the highest stockout rates, which products need immediate restocking, and how expiry risk is distributed across categories.
-
-The inventory action monitoring table at the bottom of the page flags each product with a recommendation: OK, LOW STOCK, or REORDER. This makes it easy for an operations team to see exactly where attention is needed without having to interpret charts.
-
-This page is designed to drive daily or weekly restocking decisions.
+Goes deeper into stock condition across the business. Shows how many products sit at critical, low, or healthy stock levels by category, which stores have the highest stockout rates, and how expiry risk is distributed. The inventory action monitoring table at the bottom flags each product as OK, LOW STOCK, or REORDER so an operations team knows exactly where attention is needed without interpreting charts.
 
 ![Inventory Dashboard](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/inventory%20dashboard.PNG)
 
+<br>
 
 ### Page 3 — Supplier and Replenishment Performance
 
-This page brings together supplier delivery performance and replenishment efficiency in one view. It shows how each supplier compares on lead time and damage rates, which products have the highest restock to sales ratios, and how replenishment behavior differs across categories.
-
-The replenishment performance summary table gives a side by side view of average restock quantity versus average quantity sold for each category, making the over-ordering problem immediately visible.
-
-This page is designed to help procurement and supply chain teams have informed conversations with suppliers and make better ordering decisions.
+Brings together supplier delivery performance and replenishment efficiency in one view. Shows how each supplier compares on lead time and damage rates, which products carry the highest restock to sales ratios, and how replenishment behaviour differs across categories. The summary table gives a direct side by side view of average restock quantity versus average quantity sold per category.
 
 ![Supplier Dashboard](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/suppliers%20dashboard.PNG)
 
+<br>
 
 ### Page 4 — Profitability and Promotion Analysis
 
-This page connects product and category performance to the bottom line. It shows profit margins by category, the top revenue generating products, monthly profit trends across the year, and how promotional activity compares to non-promotional periods for each category.
-
-Profit margins are relatively consistent across categories, ranging from 26.53 percent to 26.79 percent. The monthly trend shows a noticeable dip in profitability around June and July, which is worth investigating further. Promotions show limited additional revenue impact across most categories.
-
-This page is designed to help leadership understand not just what sold, but what actually contributed to profitability.
+Connects product and category performance to the bottom line. Shows profit margins by category, the top revenue generating products, monthly profit trends, and how promotional activity compares to non promotional periods. Profit margins are consistent across categories, ranging from 26.53 percent to 26.79 percent. A noticeable dip appears around June and July. Promotions show limited additional revenue impact across most categories.
 
 ![Profitability Dashboard](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/profitability%20dashboard.PNG)
 
+<br>
 
-## Key Business Outcomes
+## What I Learned Building This
 
-Putting everything together, a few clear patterns emerged from this analysis.
+The most important finding in this project did not come from the dashboard. It came from a SQL query on stockout timing.
 
-A small group of fast-moving products is responsible for a large share of revenue and profit, which means keeping those products consistently in stock should be a top priority for the business.
+When stockouts are happening during low demand periods, the instinct is to question the data. But the data was consistent. Products were running out not because customers were buying more than expected, but because replenishment decisions were not connected to what was actually selling. That single observation reframed the entire analysis from a demand problem into a planning problem, and that distinction changes every recommendation that follows.
 
-Almost the entire inventory is operating at low or critical levels, which leaves the business very exposed to any disruption in supply. The stockout rate of 38.2 percent is high, and the fact that stockouts are happening even during low-demand periods points to a planning problem rather than a demand problem.
+Building the dashboard also took more thought than expected. Adding more charts was easy. Deciding which ones actually helped someone understand the business was harder. The four page structure, each page anchored to a specific business question, was the answer. That principle kept the dashboard focused even when the temptation to add something visually interesting but operationally meaningless was strong.
 
-Perishable categories like Dairy and Frozen Foods are carrying the most expiry risk at the same time that they are being over-ordered. That combination is creating avoidable losses that better replenishment planning could fix.
-
-Supplier damage rates vary across products and suppliers, with frozen and fragile items being the most vulnerable. Tracking this consistently would give the business a stronger foundation for supplier conversations.
-
-Promotions as currently structured are not generating a meaningful return. A more targeted approach focused on categories that actually respond would likely produce better results.
-
-
-## Challenges I Faced
-
-The most difficult part of building this project was making the simulated dataset behave realistically enough to produce meaningful analysis.
-
-In early versions of the data, the outputs were technically correct but operationally strange. Stockout rates were too uniform across stores, replenishment quantities had no relationship to sales, and expiry patterns did not match realistic shelf life timelines. Getting the data to behave like a real retail operation required several rounds of adjustments.
-
-Building the dashboard also took more thought than I expected. It was easy to add more charts, but harder to decide which ones actually helped someone understand the business better. The four-page structure with each page anchored to a specific business question was the answer, and I kept going back to that principle every time I was tempted to add something that looked interesting but did not serve a clear purpose.
-
-
-## Tools Used
-
-| Tool | What I used it for |
-|------|-------------------|
-| PostgreSQL | Building the database, writing all the business analysis queries, and creating the analytical view |
-| Power BI | Building the interactive four page dashboard |
-| DAX | Writing KPI measures, trend calculations, and the calendar table |
-| Excel | Preparing and staging the raw dataset files before loading into PostgreSQL |
-| PowerPoint | Designing the project presentation slides summarising the objectives, key findings, and business recommendations |
-
+<br>
 
 ## Project Files
 
 | File | Description |
-|------|-------------|
+|:--|:--|
 | [`datasets/transactions.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/transactions.csv) | Raw transactional data covering sales, stock movements, and stockout records across all five FoodCo branches |
-| [`datasets/products.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/products.csv) | Product reference data including product names, categories, reorder levels, and expiry information |
+| [`datasets/products.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/products.csv) | Product reference data including names, categories, reorder levels, and expiry information |
 | [`datasets/stores.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/stores.csv) | Store details for all five FoodCo branch locations in Ibadan |
-| [`datasets/suppliers.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/suppliers.csv) | Supplier information including names, lead times, and product-supplier mappings |
-| [`sql/schema_creation.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/schema_creation.sql) | CREATE TABLE statements and database schema used to structure the FoodCo inventory dataset in PostgreSQL |
-| [`sql/data_loading.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/data_loading.sql) | Scripts used to import and load the raw dataset into the PostgreSQL database |
+| [`datasets/suppliers.csv`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/datasets/suppliers.csv) | Supplier information including names, lead times, and product supplier mappings |
+| [`sql/schema_creation.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/schema_creation.sql) | CREATE TABLE statements and database schema for the FoodCo inventory dataset in PostgreSQL |
+| [`sql/data_loading.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/data_loading.sql) | Scripts to import and load the raw dataset into the PostgreSQL database |
 | [`sql/analytical_view.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/analytical_view.sql) | SQL view that aggregates and prepares data for use as the Power BI data source |
 | [`sql/business_queries.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/business_queries.sql) | All seven business analysis query sets covering sales, inventory, stockouts, expiry, suppliers, restocking, and promotions |
-| [`analysis/foodco_sql_analysis.md`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/foodco_sql_analysis.md) | Full written analysis including SQL queries, query outputs, insights, and recommendations for each business question |
+| [`analysis/foodco_sql_analysis.md`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/foodco_sql_analysis.md) | Full written analysis including SQL queries, outputs, insights, and recommendations for each business question |
 | [`dashboard/Retail_Inventory_Dashboard.pbix`](https://app.powerbi.com/view?r=eyJrIjoiMjE3NmVhNzItYmZhNC00M2YyLWJlOGYtNzAwOTRmMjJiYjRlIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9) | Complete Power BI dashboard file containing all charts, KPIs, and visual reports |
 | [`presentation/project_presentation_slides.pdf`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/presentation/project%20presentation%20sildes.pdf) | Slide deck summarising the project objectives, key findings, and business recommendations |
-| [`images/overview_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/overview%20dashboard.PNG) | Screenshot of the Power BI overview dashboard showing high-level KPIs and revenue performance |
+| [`images/overview_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/overview%20dashboard.PNG) | Screenshot of the overview dashboard showing high level KPIs and revenue performance |
 | [`images/inventory_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/inventory%20dashboard.PNG) | Screenshot of the inventory health dashboard showing stock status, coverage days, and critical stock alerts |
 | [`images/supplier_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/suppliers%20dashboard.PNG) | Screenshot of the supplier performance dashboard showing lead times and damage rates by supplier |
 | [`images/profitability_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/profitability%20dashboard.PNG) | Screenshot of the profitability dashboard showing revenue and profit breakdown by product, category, and store |
 
+<br>
 
 ## Repository Structure
 
@@ -350,5 +325,32 @@ retail-inventory-supply-chain-analytics/
 └── README.md
 ```
 
+<br>
 
-*Olajimi Adeleke — [LinkedIn](https://www.linkedin.com/in/olajimi-adeleke) · [Portfolio](https://jimi121.github.io/)*
+## Tools Used
+
+| Tool | Purpose |
+|:--|:--|
+| PostgreSQL | Database design, business analysis, and the analytical view |
+| Power BI | Building the interactive four page dashboard |
+| DAX | KPI measures, trend calculations, and the calendar table |
+| Excel | Preparing and staging the raw dataset files before loading into PostgreSQL |
+| PowerPoint | Project presentation deck summarising objectives, findings, and recommendations |
+
+<br>
+
+## About This Project
+
+This is a personal portfolio project. The data is simulated and FoodCo is a fictional grocery chain. The problems it represents are not fictional.
+
+Empty shelves, expiring stock, suppliers sending damaged goods, and replenishment decisions made without looking at what actually sold. These things are happening in real retail businesses right now. This project shows what changes when you use the data to make those decisions.
+
+<br>
+
+<p align="center">
+  <strong>Olajimi Adeleke</strong><br>
+  Data Analyst<br><br>
+  <a href="https://www.linkedin.com/in/olajimi-adeleke">LinkedIn</a>
+  &nbsp;&nbsp;
+  <a href="https://jimi121.github.io/">Portfolio</a>
+</p>
