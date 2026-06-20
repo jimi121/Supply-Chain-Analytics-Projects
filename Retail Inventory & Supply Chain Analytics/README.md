@@ -86,7 +86,7 @@ Rather than loading all four tables separately into Power BI, a SQL analytical v
 
 The SQL analysis covers seven business areas. Each section was approached as a standalone business problem with specific questions to answer.
 
-📄 **[Read the full SQL analysis with all queries, outputs, and findings](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/foodco_sql_analysis.md)**
+📄 **[Read the full SQL analysis with all queries, outputs, and findings](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/ShelfCo_SQL_Analysis.md)**
 
 <br>
 
@@ -294,8 +294,8 @@ Building the dashboard also took more thought than expected. Adding more charts 
 | [`sql/data_loading.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/data_loading.sql) | Scripts to import and load the raw dataset into the PostgreSQL database |
 | [`sql/analytical_view.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/analytical_view.sql) | SQL view that aggregates and prepares data for use as the Power BI data source |
 | [`sql/business_queries.sql`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/sql/business_queries.sql) | All seven business analysis query sets covering sales, inventory, stockouts, expiry, suppliers, restocking, and promotions |
-| [`analysis/foodco_sql_analysis.md`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/foodco_sql_analysis.md) | Full written analysis including SQL queries, outputs, insights, and recommendations for each business question |
-| [`dashboard/Retail_Inventory_Dashboard.pbix`](https://app.powerbi.com/view?r=eyJrIjoiMjE3NmVhNzItYmZhNC00M2YyLWJlOGYtNzAwOTRmMjJiYjRlIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9) | Complete Power BI dashboard file containing all charts, KPIs, and visual reports |
+| [`analysis/shelfco_sql_analysis.md`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/analysis/ShelfCo_SQL_Analysis.md) | Full written analysis including SQL queries, outputs, insights, and recommendations for each business question |
+| [`dashboard/Retail_Inventory_Dashboard.pbix`](https://app.powerbi.com/view?r=eyJrIjoiM2M0ZmJhYjYtODE2Yi00YmU1LWJkZTktMWY1YmFmNTYwMmQ1IiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9) | Complete Power BI dashboard file containing all charts, KPIs, and visual reports |
 | [`presentation/project_presentation_slides.pdf`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/presentation/project%20presentation%20sildes.pdf) | Slide deck summarising the project objectives, key findings, and business recommendations |
 | [`images/overview_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/overview%20dashboard.PNG) | Screenshot of the overview dashboard showing high level KPIs and revenue performance |
 | [`images/inventory_dashboard.png`](https://github.com/jimi121/jimi121-Supply-Chain-Analytics-Projects/blob/main/Retail%20Inventory%20%26%20Supply%20Chain%20Analytics/images/inventory%20dashboard.PNG) | Screenshot of the inventory health dashboard showing stock status, coverage days, and critical stock alerts |
