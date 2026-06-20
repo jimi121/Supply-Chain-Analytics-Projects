@@ -322,7 +322,7 @@ retail-inventory-supply-chain-analytics/
 │   └── business_queries.sql
 │
 ├── analysis/
-│   └── foodco_sql_analysis.md
+│   └── shelfco_sql_analysis.md
 │
 ├── dashboard/
 │   └── Retail_Inventory_Dashboard.pbix
