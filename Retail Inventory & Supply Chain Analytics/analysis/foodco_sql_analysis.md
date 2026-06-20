@@ -1,10 +1,10 @@
-# 🛒 FoodCo Supermarket: Retail Inventory and Supply Chain Analysis
+# 🛒 ShelfCo Supermarket: Retail Inventory and Supply Chain Analysis
 **Tool:** PostgreSQL &nbsp;|&nbsp; **Author:** Olajimi Adeleke &nbsp;|&nbsp; **Project Type:** Portfolio Project
 
 
 > **About This Project**
 >
-> This project is a SQL-based business analysis of FoodCo Supermarket's retail inventory and supply chain operations across five branch locations in Ibadan, Nigeria. The analysis covers seven business areas including sales performance, stock health, supplier quality, and promotion effectiveness. Each section ends with a result summary, key insight, and a practical recommendation that the business can act on.
+> This project is a SQL-based business analysis of ShelfCo Supermarket's retail inventory and supply chain operations across five branch locations in Ibadan, Nigeria. The analysis covers seven business areas including sales performance, stock health, supplier quality, and promotion effectiveness. Each section ends with a result summary, key insight, and a practical recommendation that the business can act on.
 
 
 ## 📑 Table of Contents
@@ -83,7 +83,7 @@ Bread generated the highest revenue at ₦5.66M, followed by Coca-Cola 50cl at �
 
 **💡 Key Insight**
 
-Bread, Coca-Cola 50cl, and Meat Pie are the top performers in both revenue and profit. What stands out is that Meat Pie has the highest average profit margin among the top 10 at 28.07%, meaning it contributes strong value beyond just volume. It is also worth noting that the top 10 list cuts across Bakery, Beverages, and Frozen Foods, which tells us FoodCo is not relying on a single category to drive performance.
+Bread, Coca-Cola 50cl, and Meat Pie are the top performers in both revenue and profit. What stands out is that Meat Pie has the highest average profit margin among the top 10 at 28.07%, meaning it contributes strong value beyond just volume. It is also worth noting that the top 10 list cuts across Bakery, Beverages, and Frozen Foods, which tells us ShelfCo is not relying on a single category to drive performance.
 
 **✅ Recommendation**
 
@@ -155,19 +155,19 @@ Inventory spending and promotional energy should be focused on Beverages and Bak
 
 | Store Name | Total Revenue (₦) | Total Profit (₦) | Profit Margin (%) |
 |---|---|---|---|
-| FoodCo Akobo | 11,133,733 | 3,002,456.54 | 26.97 |
-| FoodCo Mokola | 11,247,301 | 2,976,747.05 | 26.47 |
-| FoodCo Bodija | 10,857,701 | 2,945,502.15 | 27.13 |
-| FoodCo Jericho | 10,437,674 | 2,761,469.95 | 26.46 |
-| FoodCo Ring Road | 10,358,191 | 2,694,411.40 | 26.01 |
+| ShelfCo Akobo | 11,133,733 | 3,002,456.54 | 26.97 |
+| ShelfCo Mokola | 11,247,301 | 2,976,747.05 | 26.47 |
+| ShelfCo Bodija | 10,857,701 | 2,945,502.15 | 27.13 |
+| ShelfCo Jericho | 10,437,674 | 2,761,469.95 | 26.46 |
+| ShelfCo Ring Road | 10,358,191 | 2,694,411.40 | 26.01 |
 
 **📊 Result Summary**
 
-FoodCo Akobo ranks first in total profit at ₦3.0M, while FoodCo Mokola generates the highest revenue overall at ₦11.25M. Bodija comes in third on both revenue and profit but holds the best profit margin at 27.13%. Ring Road is at the bottom on both profit and margin.
+ShelfCo Akobo ranks first in total profit at ₦3.0M, while ShelfCo Mokola generates the highest revenue overall at ₦11.25M. Bodija comes in third on both revenue and profit but holds the best profit margin at 27.13%. Ring Road is at the bottom on both profit and margin.
 
 **💡 Key Insight**
 
-The performance gap across all five stores is actually quite small. The difference between the highest and lowest revenue stores is under ₦900K, which suggests demand is fairly consistent across FoodCo's Ibadan locations. What stands out is Bodija having the best margin despite not being first in revenue. This points to better cost control or product mix decisions at that branch. Ring Road's 26.01% margin is the lowest and deserves a closer look.
+The performance gap across all five stores is actually quite small. The difference between the highest and lowest revenue stores is under ₦900K, which suggests demand is fairly consistent across ShelfCo's Ibadan locations. What stands out is Bodija having the best margin despite not being first in revenue. This points to better cost control or product mix decisions at that branch. Ring Road's 26.01% margin is the lowest and deserves a closer look.
 
 **✅ Recommendation**
 
@@ -242,21 +242,21 @@ The business needs automated stock alerts so that inventory managers are notifie
 
 | Store | Product | Category | Current Stock | Reorder Level | Restock Qty | Recommended Action |
 |---|---|---|---|---|---|---|
-| FoodCo Akobo | Air Freshener | Household | 35 | 40 | 83 | URGENT RESTOCK |
-| FoodCo Bodija | Air Freshener | Household | 35 | 40 | 94 | URGENT RESTOCK |
-| FoodCo Akobo | Air Freshener | Household | 37 | 40 | 89 | URGENT RESTOCK |
-| FoodCo Jericho | Air Freshener | Household | 37 | 40 | 101 | URGENT RESTOCK |
-| FoodCo Akobo | Air Freshener | Household | 39 | 40 | 123 | URGENT RESTOCK |
-| FoodCo Bodija | Air Freshener | Household | 39 | 40 | 91 | URGENT RESTOCK |
-| FoodCo Jericho | Air Freshener | Household | 39 | 40 | 125 | URGENT RESTOCK |
-| FoodCo Jericho | Air Freshener | Household | 39 | 40 | 147 | URGENT RESTOCK |
-| FoodCo Bodija | Butter | Dairy | 40 | 60 | 138 | REMOVE EXPIRED STOCK |
-| FoodCo Mokola | Butter | Dairy | 40 | 60 | 131 | URGENT RESTOCK |
-| FoodCo Mokola | Shampoo | Toiletries | 40 | 50 | 84 | URGENT RESTOCK |
-| FoodCo Jericho | Shampoo | Toiletries | 41 | 50 | 128 | URGENT RESTOCK |
-| FoodCo Bodija | Shampoo | Toiletries | 41 | 50 | 132 | URGENT RESTOCK |
-| FoodCo Ring Road | Butter | Dairy | 41 | 60 | 114 | URGENT RESTOCK |
-| FoodCo Akobo | Cheese | Dairy | 41 | 50 | 108 | URGENT RESTOCK |
+| ShelfCo Akobo | Air Freshener | Household | 35 | 40 | 83 | URGENT RESTOCK |
+| ShelfCo Bodija | Air Freshener | Household | 35 | 40 | 94 | URGENT RESTOCK |
+| ShelfCo Akobo | Air Freshener | Household | 37 | 40 | 89 | URGENT RESTOCK |
+| ShelfCo Jericho | Air Freshener | Household | 37 | 40 | 101 | URGENT RESTOCK |
+| ShelfCo Akobo | Air Freshener | Household | 39 | 40 | 123 | URGENT RESTOCK |
+| ShelfCo Bodija | Air Freshener | Household | 39 | 40 | 91 | URGENT RESTOCK |
+| ShelfCo Jericho | Air Freshener | Household | 39 | 40 | 125 | URGENT RESTOCK |
+| ShelfCo Jericho | Air Freshener | Household | 39 | 40 | 147 | URGENT RESTOCK |
+| ShelfCo Bodija | Butter | Dairy | 40 | 60 | 138 | REMOVE EXPIRED STOCK |
+| ShelfCo Mokola | Butter | Dairy | 40 | 60 | 131 | URGENT RESTOCK |
+| ShelfCo Mokola | Shampoo | Toiletries | 40 | 50 | 84 | URGENT RESTOCK |
+| ShelfCo Jericho | Shampoo | Toiletries | 41 | 50 | 128 | URGENT RESTOCK |
+| ShelfCo Bodija | Shampoo | Toiletries | 41 | 50 | 132 | URGENT RESTOCK |
+| ShelfCo Ring Road | Butter | Dairy | 41 | 60 | 114 | URGENT RESTOCK |
+| ShelfCo Akobo | Cheese | Dairy | 41 | 50 | 108 | URGENT RESTOCK |
 
 **📊 Result Summary**
 
@@ -264,7 +264,7 @@ Air Freshener, Butter, Shampoo, and Cheese show up repeatedly across different s
 
 **💡 Key Insight**
 
-Dairy and Household products are where the critical stock situations are clustering. What makes this worse is the combination of critically low stock and expired units sitting on the shelves at the same time. Take Butter at FoodCo Bodija for example: current stock is 40 units but the reorder level is 60, and the action flagged is to remove expired stock first. That means before any meaningful restocking can help, the branch has to deal with expired product taking up space. It is a two-layer problem.
+Dairy and Household products are where the critical stock situations are clustering. What makes this worse is the combination of critically low stock and expired units sitting on the shelves at the same time. Take Butter at ShelfCo Bodija for example: current stock is 40 units but the reorder level is 60, and the action flagged is to remove expired stock first. That means before any meaningful restocking can help, the branch has to deal with expired product taking up space. It is a two-layer problem.
 
 **✅ Recommendation**
 
@@ -319,7 +319,7 @@ Bread and Coca-Cola 50cl have less than 2 days of stock left on average. No prod
 
 **💡 Key Insight**
 
-The top revenue products are also the ones running out the fastest. Bread has 1.68 days of stock, Coca-Cola 50cl has 1.77 days, and Maltina Can has 1.85 days. If there is even a short delay in delivery, FoodCo will be completely out of its best-selling products. For perishables like Yoghurt and Ice Cream, you cannot just stockpile more to compensate because that creates expiry risk. The margin for error here is very small.
+The top revenue products are also the ones running out the fastest. Bread has 1.68 days of stock, Coca-Cola 50cl has 1.77 days, and Maltina Can has 1.85 days. If there is even a short delay in delivery, ShelfCo will be completely out of its best-selling products. For perishables like Yoghurt and Ice Cream, you cannot just stockpile more to compensate because that creates expiry risk. The margin for error here is very small.
 
 **✅ Recommendation**
 
@@ -416,15 +416,15 @@ Biscuits needs immediate and sustained attention. The reorder point and replenis
 
 | Store Name | Total Records | Total Stockouts | Stockout Rate (%) |
 |---|---|---|---|
-| FoodCo Jericho | 240 | 98 | 40.83 |
-| FoodCo Akobo | 240 | 97 | 40.42 |
-| FoodCo Ring Road | 240 | 91 | 37.92 |
-| FoodCo Bodija | 240 | 87 | 36.25 |
-| FoodCo Mokola | 240 | 85 | 35.42 |
+| ShelfCo Jericho | 240 | 98 | 40.83 |
+| ShelfCo Akobo | 240 | 97 | 40.42 |
+| ShelfCo Ring Road | 240 | 91 | 37.92 |
+| ShelfCo Bodija | 240 | 87 | 36.25 |
+| ShelfCo Mokola | 240 | 85 | 35.42 |
 
 **📊 Result Summary**
 
-FoodCo Jericho has the highest stockout rate at 40.83%, with Akobo close behind at 40.42%. All five stores sit between 35% and 41%, which confirms this is not a problem with one or two branches but a chain-wide issue.
+ShelfCo Jericho has the highest stockout rate at 40.83%, with Akobo close behind at 40.42%. All five stores sit between 35% and 41%, which confirms this is not a problem with one or two branches but a chain-wide issue.
 
 **💡 Key Insight**
 
@@ -478,7 +478,7 @@ Half the inventory is at risk in some form. The most urgent issue is the 154 alr
 
 **✅ Recommendation**
 
-Every store needs to pull expired products off shelves immediately. For items expiring within 30 days, targeted promotions like discounts, bundles, or end-of-aisle placements should be used to move them before the date hits. FoodCo should also enforce FIFO (First-In, First-Out) rotation across all branches as a standard practice to stop this problem from continuing.
+Every store needs to pull expired products off shelves immediately. For items expiring within 30 days, targeted promotions like discounts, bundles, or end-of-aisle placements should be used to move them before the date hits. ShelfCo should also enforce FIFO (First-In, First-Out) rotation across all branches as a standard practice to stop this problem from continuing.
 
 
 ### 4.2 Expired and Expiring Soon Products
@@ -507,25 +507,25 @@ Every store needs to pull expired products off shelves immediately. For items ex
 
 | Store | Product | Category | Expiry Date | Days to Expiry | Current Stock | Qty Sold | Recommended Action |
 |---|---|---|---|---|---|---|---|
-| FoodCo Mokola | Butter | Dairy | 2025-11-16 | -15 | 65 | 14 | REMOVE EXPIRED STOCK |
-| FoodCo Jericho | Sausage | Frozen Foods | 2025-09-16 | -15 | 74 | 30 | REMOVE EXPIRED STOCK |
-| FoodCo Bodija | Meat Pie | Bakery | 2025-02-14 | -15 | 110 | 49 | REMOVE EXPIRED STOCK |
-| FoodCo Bodija | Butter | Dairy | 2025-04-16 | -15 | 58 | 14 | REMOVE EXPIRED STOCK |
-| FoodCo Bodija | Ice Cream | Frozen Foods | 2025-05-17 | -15 | 68 | 23 | REMOVE EXPIRED STOCK |
-| FoodCo Ring Road | Sausage | Frozen Foods | 2025-02-14 | -15 | 81 | 29 | REMOVE EXPIRED STOCK |
-| FoodCo Bodija | Biscuits | Bakery | 2025-01-17 | -15 | 87 | 18 | REMOVE EXPIRED STOCK |
-| FoodCo Jericho | Meat Pie | Bakery | 2025-04-16 | -15 | 101 | 47 | REMOVE EXPIRED STOCK |
-| FoodCo Mokola | Yoghurt | Dairy | 2024-12-17 | -15 | 55 | 22 | REMOVE EXPIRED STOCK |
-| FoodCo Ring Road | Butter | Dairy | 2024-12-18 | -14 | 54 | 20 | REMOVE EXPIRED STOCK |
-| FoodCo Ring Road | Meat Pie | Bakery | 2025-04-17 | -14 | 108 | 55 | REMOVE EXPIRED STOCK |
-| FoodCo Bodija | Butter | Dairy | 2025-07-18 | -14 | 52 | 21 | REMOVE EXPIRED STOCK |
-| FoodCo Akobo | Ice Cream | Frozen Foods | 2025-03-18 | -14 | 53 | 36 | REMOVE EXPIRED STOCK |
-| FoodCo Akobo | Sausage | Frozen Foods | 2025-05-18 | -14 | 62 | 35 | REMOVE EXPIRED STOCK |
-| FoodCo Mokola | Ice Cream | Frozen Foods | 2025-03-19 | -13 | 51 | 38 | REMOVE EXPIRED STOCK |
+| ShelfCo Mokola | Butter | Dairy | 2025-11-16 | -15 | 65 | 14 | REMOVE EXPIRED STOCK |
+| ShelfCo Jericho | Sausage | Frozen Foods | 2025-09-16 | -15 | 74 | 30 | REMOVE EXPIRED STOCK |
+| ShelfCo Bodija | Meat Pie | Bakery | 2025-02-14 | -15 | 110 | 49 | REMOVE EXPIRED STOCK |
+| ShelfCo Bodija | Butter | Dairy | 2025-04-16 | -15 | 58 | 14 | REMOVE EXPIRED STOCK |
+| ShelfCo Bodija | Ice Cream | Frozen Foods | 2025-05-17 | -15 | 68 | 23 | REMOVE EXPIRED STOCK |
+| ShelfCo Ring Road | Sausage | Frozen Foods | 2025-02-14 | -15 | 81 | 29 | REMOVE EXPIRED STOCK |
+| ShelfCo Bodija | Biscuits | Bakery | 2025-01-17 | -15 | 87 | 18 | REMOVE EXPIRED STOCK |
+| ShelfCo Jericho | Meat Pie | Bakery | 2025-04-16 | -15 | 101 | 47 | REMOVE EXPIRED STOCK |
+| ShelfCo Mokola | Yoghurt | Dairy | 2024-12-17 | -15 | 55 | 22 | REMOVE EXPIRED STOCK |
+| ShelfCo Ring Road | Butter | Dairy | 2024-12-18 | -14 | 54 | 20 | REMOVE EXPIRED STOCK |
+| ShelfCo Ring Road | Meat Pie | Bakery | 2025-04-17 | -14 | 108 | 55 | REMOVE EXPIRED STOCK |
+| ShelfCo Bodija | Butter | Dairy | 2025-07-18 | -14 | 52 | 21 | REMOVE EXPIRED STOCK |
+| ShelfCo Akobo | Ice Cream | Frozen Foods | 2025-03-18 | -14 | 53 | 36 | REMOVE EXPIRED STOCK |
+| ShelfCo Akobo | Sausage | Frozen Foods | 2025-05-18 | -14 | 62 | 35 | REMOVE EXPIRED STOCK |
+| ShelfCo Mokola | Ice Cream | Frozen Foods | 2025-03-19 | -13 | 51 | 38 | REMOVE EXPIRED STOCK |
 
 **📊 Result Summary**
 
-Dairy and Frozen Food products are responsible for the majority of expired and soon-to-expire items across all five branches. Several of these expired items still show large quantities in stock, for example, 110 units of expired Meat Pie at FoodCo Bodija, which means they are still sitting in storage and have not been removed.
+Dairy and Frozen Food products are responsible for the majority of expired and soon-to-expire items across all five branches. Several of these expired items still show large quantities in stock, for example, 110 units of expired Meat Pie at ShelfCo Bodija, which means they are still sitting in storage and have not been removed.
 
 **💡 Key Insight**
 
@@ -633,7 +633,7 @@ FreshBake Suppliers' Meat Pie is the most damaged product-supplier combination w
 
 **💡 Key Insight**
 
-CoolFresh Logistics is the biggest damage problem in FoodCo's supply chain. Every single one of their product lines (Ice Cream, Chicken Wings, Frozen Fish, Sausage) shows up with high damage totals, and all of them are frozen products. This strongly points to a cold chain failure during transport, possibly insufficient refrigeration or too many handoffs along the delivery route. FreshBake's Meat Pie damage (averaging 4.9 units per delivery) is also a concern since Meat Pie is a top-revenue product. Even Dangote Foods managing to damage 246 units of Coca-Cola 50cl, which is FoodCo's second highest earner, is not something that should be accepted without a formal conversation.
+CoolFresh Logistics is the biggest damage problem in ShelfCo's supply chain. Every single one of their product lines (Ice Cream, Chicken Wings, Frozen Fish, Sausage) shows up with high damage totals, and all of them are frozen products. This strongly points to a cold chain failure during transport, possibly insufficient refrigeration or too many handoffs along the delivery route. FreshBake's Meat Pie damage (averaging 4.9 units per delivery) is also a concern since Meat Pie is a top-revenue product. Even Dangote Foods managing to damage 246 units of Coca-Cola 50cl, which is ShelfCo's second highest earner, is not something that should be accepted without a formal conversation.
 
 **✅ Recommendation**
 
@@ -942,16 +942,16 @@ Average units sold and revenue are almost identical across High, Low, and Medium
 
 **💡 Key Insight**
 
-This result is surprising and important. You would expect stockouts to be highest during High demand periods when customers are buying more. Instead, stockouts happen more often when demand is Low. This tells us that stockouts at FoodCo are not being caused by unexpected surges in customer demand. They are happening because the inventory system is running on fixed order quantities that do not respond to actual demand conditions at all. Whether demand is high or low, the same amount of stock is ordered, and that stock often runs out before the next order arrives regardless of how much or how little customers are buying.
+This result is surprising and important. You would expect stockouts to be highest during High demand periods when customers are buying more. Instead, stockouts happen more often when demand is Low. This tells us that stockouts at ShelfCo are not being caused by unexpected surges in customer demand. They are happening because the inventory system is running on fixed order quantities that do not respond to actual demand conditions at all. Whether demand is high or low, the same amount of stock is ordered, and that stock often runs out before the next order arrives regardless of how much or how little customers are buying.
 
 **✅ Recommendation**
 
-FoodCo needs to move away from fixed-quantity ordering toward a model that adjusts based on recent sales. Even a basic setup where reorder quantities are updated monthly based on the previous month's actual sales would be a significant improvement over what is currently in place. If point-of-sale data is available, it should be feeding directly into the restocking decision rather than being ignored.
+ShelfCo needs to move away from fixed-quantity ordering toward a model that adjusts based on recent sales. Even a basic setup where reorder quantities are updated monthly based on the previous month's actual sales would be a significant improvement over what is currently in place. If point-of-sale data is available, it should be feeding directly into the restocking decision rather than being ignored.
 
 
 ## Overall Conclusion
 
-FoodCo Supermarket has a solid revenue foundation built on strong products and consistent demand across all five branches. However, the operational side of the business, particularly inventory management and supply chain reliability, is limiting how much of that revenue potential is being captured.
+ShelfCo Supermarket has a solid revenue foundation built on strong products and consistent demand across all five branches. However, the operational side of the business, particularly inventory management and supply chain reliability, is limiting how much of that revenue potential is being captured.
 
 | Area | Key Finding |
 |---|---|
