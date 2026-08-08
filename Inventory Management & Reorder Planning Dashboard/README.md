@@ -1,6 +1,6 @@
 <div align="center">
 
-# Inventory Analytics & Control Dashboard
+# Inventory Management & Reorder Planning Dashboard
 
 **An Excel and Power BI inventory reporting solution for monitoring stock, planning reorders and evaluating supplier performance.**
 
@@ -19,7 +19,7 @@ The project combines Microsoft Excel and Power BI, with data preparation, valida
 
 ## Dashboard
 
-![Executive Overview](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Executive.PNG)
+![Executive Overview](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Executive.PNG)
 
 ### Interactive Power BI Report
 
@@ -82,7 +82,7 @@ The page also shows inventory value over time, category-level inventory value an
 
 The urgent-items section brings products requiring attention into view.
 
-![Executive Overview](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Executive.PNG)
+![Executive Overview](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Executive.PNG)
 
 ---
 
@@ -96,7 +96,7 @@ The page includes product cost, yearly sales value, stock quantity, stock status
 
 This makes it possible to move from the overall inventory position into the details of an individual product.
 
-![Product Catalog](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Product.PNG)
+![Product Catalog](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Product.PNG)
 
 ---
 
@@ -116,7 +116,7 @@ The product-level table provides:
 
 This helps distinguish between healthy inventory, stock that is running low and inventory that has remained unused for too long.
 
-![Inventory Levels](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Inventory.PNG)
+![Inventory Levels](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Inventory.PNG)
 
 ---
 
@@ -130,7 +130,7 @@ Users can filter the transaction history by product and date range and investiga
 
 The current report period contains **332 transactions**, with **28,470 units received** and **27,870 units issued**.
 
-![Stock Movements](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Transactions.PNG)
+![Stock Movements](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Transactions.PNG)
 
 ---
 
@@ -151,7 +151,7 @@ The current report shows **90% supplier on-time delivery**, an average lead time
 
 The supplier scorecard makes it easier to compare suppliers and identify differences in delivery performance.
 
-![Supplier Performance](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Suppliers.PNG)
+![Supplier Performance](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Suppliers.PNG)
 
 ---
 
@@ -173,7 +173,7 @@ For each product, users can see:
 
 The current analysis identifies **3 high-risk products** and **9 products requiring reorder**, with a suggested reorder value of **₦965,730**.
 
-![Reorder Planning](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Reorder%20Tracker.PNG)
+![Reorder Planning](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Reorder%20Tracker.PNG)
 
 ---
 
@@ -196,7 +196,7 @@ The current report identifies **3 products close to running out**, **4 products 
 
 The executive summary brings the main findings together so that someone can understand the current inventory situation without going through every report page.
 
-![Inventory Insights](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Analytics%20%26%20Control%20Dashboard/Dashboard%20Images/Insights.PNG)
+![Inventory Insights](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Inventory%20Management%20%26%20Reorder%20Planning%20Dashboard/Images/Insights.PNG)
 
 ---
 
