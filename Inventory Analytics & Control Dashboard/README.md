@@ -1,8 +1,8 @@
 <div align="center">
 
-# NovaLink Inventory Control
+# Inventory Analytics & Control Dashboard
 
-**An Excel and Power BI inventory management system for monitoring stock, planning reorders and evaluating supplier performance.**
+**An Excel and Power BI inventory reporting solution for monitoring stock, planning reorders and evaluating supplier performance.**
 
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
@@ -11,11 +11,9 @@
 
 </div>
 
-I built NovaLink to turn inventory, sales and supplier data into a reporting system that makes it easier to see what is happening with stock and where attention is needed.
+I built this project to turn inventory, sales and supplier data into a reporting system that makes it easier to understand stock levels, identify products that need attention and support purchasing decisions.
 
-The project combines Microsoft Excel and Power BI to track inventory levels, stock movements, supplier performance and reorder requirements.
-
-I worked on the data preparation, calculations, data modelling, validation, DAX measures and Power BI report design.
+The project combines Microsoft Excel and Power BI, with data preparation, validation, calculations, modelling and interactive reporting all forming part of the workflow.
 
 ---
 
@@ -25,11 +23,9 @@ I worked on the data preparation, calculations, data modelling, validation, DAX 
 
 ### Interactive Power BI Report
 
-The full report can be explored here:
-
 **[Open the Interactive Power BI Dashboard](PASTE-YOUR-POWER-BI-LINK-HERE)**
 
-The interactive report allows users to filter products, categories and suppliers, investigate stock movements and review products that need attention.
+The interactive report allows users to filter products, categories and suppliers, investigate stock movements and review products that require attention.
 
 ---
 
@@ -43,19 +39,17 @@ The dataset covers:
 - Six months of inventory, sales and supplier activity
 - 7 Power BI report pages
 
-The report is built around three practical questions:
+The report focuses on three practical areas:
 
-1. What is happening with inventory right now?
-2. Which products need attention or need to be reordered?
-3. Which suppliers are performing reliably?
+- Understanding the current inventory position
+- Identifying products that need attention or need to be reordered
+- Evaluating supplier delivery performance
 
-The aim was to make the report useful to someone who does not need to be a data analyst to understand it.
+The aim was to make the report useful to both technical and non-technical users. Someone reviewing the dashboard should be able to understand the main inventory issues without having to work through the underlying calculations.
 
 ---
 
 ## Current Inventory Snapshot
-
-The report provides a quick view of the current inventory position and the areas that need attention.
 
 | Metric | Current Value |
 |---|---:|
@@ -72,7 +66,7 @@ The report provides a quick view of the current inventory position and the areas
 | Supplier on-time delivery | **90%** |
 | Pending supplier orders | **6** |
 
-These figures give a quick picture of where inventory is healthy and where action may be required. The individual report pages provide the detail behind each measure. :contentReference[oaicite:1]{index=1}
+These figures provide a quick view of the current inventory position. The individual report pages provide the detail behind each measure.
 
 ---
 
@@ -80,13 +74,13 @@ These figures give a quick picture of where inventory is healthy and where actio
 
 ## 1. Executive Overview
 
-The Executive Overview is the starting point for understanding the overall inventory position.
+The Executive Overview provides the starting point for understanding the overall inventory position.
 
 It brings together total stock value, products below their reorder point, out-of-stock products and overall inventory health.
 
-The page also shows how inventory value changes over time, which product categories hold the most inventory value and how much stock is being received compared with stock being issued.
+The page also shows inventory value over time, category-level inventory value and the movement of stock into and out of the business.
 
-The urgent-items section brings individual products that need attention into view.
+The urgent-items section brings products requiring attention into view.
 
 ![Executive Overview](images/dashboard-overview.png)
 
@@ -94,11 +88,11 @@ The urgent-items section brings individual products that need attention into vie
 
 ## 2. Product Catalog
 
-The Product Catalog provides a detailed view of the 30 products in the dataset.
+The Product Catalog provides a detailed view of the products in the dataset.
 
-Users can filter the catalogue by status, category and supplier or search for a specific SKU or product.
+Users can filter the catalogue by status, category and supplier or search for a specific product.
 
-The page shows product cost, yearly sales value, stock quantity, stock status and value classification.
+The page includes product cost, yearly sales value, stock quantity, stock status and value classification.
 
 This makes it possible to move from the overall inventory position into the details of an individual product.
 
@@ -112,7 +106,7 @@ The Inventory Levels page focuses on stock availability and inventory coverage.
 
 It shows current stock value, average days of stock remaining, slow-moving products and the value tied up in dead stock.
 
-The product table provides more detail for each SKU, including:
+The product-level table provides:
 
 - Quantity in stock
 - Reorder point
@@ -120,7 +114,7 @@ The product table provides more detail for each SKU, including:
 - Days since the last movement
 - Stock status
 
-The page helps distinguish between healthy inventory, excess stock and products that are approaching a reorder point.
+This helps distinguish between healthy inventory, stock that is running low and inventory that has remained unused for too long.
 
 ![Inventory Levels](images/inventory-levels.png)
 
@@ -132,11 +126,9 @@ The Stock Movements page provides a transaction-level view of inventory activity
 
 It tracks receipts, issues and adjustments and shows the resulting stock level after each movement.
 
-Users can filter the transaction history by SKU, product and date range and investigate individual movements when something does not look right.
+Users can filter the transaction history by product and date range and investigate individual movements when something does not look right.
 
-This creates a link between the underlying inventory transactions and the stock figures shown elsewhere in the report.
-
-The current report period contains **332 transactions**, with 28,470 units received and 27,870 units issued. :contentReference[oaicite:2]{index=2}
+The current report period contains **332 transactions**, with **28,470 units received** and **27,870 units issued**.
 
 ![Stock Movements](images/stock-movements.png)
 
@@ -155,7 +147,7 @@ It tracks:
 - Products supplied
 - Supplier stock value
 
-The current report shows an overall supplier on-time delivery rate of **90%**, with an average lead time of **6.2 days** and **6 pending orders**. :contentReference[oaicite:3]{index=3}
+The current report shows **90% supplier on-time delivery**, an average lead time of **6.2 days** and **6 pending orders**.
 
 The supplier scorecard makes it easier to compare suppliers and identify differences in delivery performance.
 
@@ -165,11 +157,11 @@ The supplier scorecard makes it easier to compare suppliers and identify differe
 
 ## 6. Reorder Planning
 
-The Reorder Planning page focuses on the next purchasing decisions.
+The Reorder Planning page focuses on the products that may require purchasing action.
 
-It identifies products that are at higher risk of stockout and products that have fallen below their reorder point.
+It identifies high-risk products and products that have fallen below their reorder point.
 
-For each product, the report shows:
+For each product, users can see:
 
 - Current stock
 - Reorder point
@@ -179,9 +171,7 @@ For each product, the report shows:
 - Expected run-out date
 - Recommended action
 
-The current analysis identifies **3 high-risk products** and **9 products requiring reorder**, with a suggested reorder value of **₦965,730**. :contentReference[oaicite:4]{index=4}
-
-This turns the inventory data into information that can support purchasing decisions.
+The current analysis identifies **3 high-risk products** and **9 products requiring reorder**, with a suggested reorder value of **₦965,730**.
 
 ![Reorder Planning](images/reorder-planning.png)
 
@@ -191,22 +181,20 @@ This turns the inventory data into information that can support purchasing decis
 
 The Inventory Insights page brings the main findings together in plain language.
 
-Rather than making the user interpret every chart, the page highlights the areas that deserve attention.
+Instead of leaving the user to interpret every chart, the page highlights the areas that deserve attention.
 
 The analysis covers:
 
 - Overall stock health
 - Products approaching stockout
-- Where inventory value is concentrated
+- Inventory value concentration
 - Slow-moving inventory
 - Supplier reliability
 - Products requiring reorder
 
 The current report identifies **3 products close to running out**, **4 products that have not moved in over a month** and **₦1,953,450 of stock tied up in slow-moving inventory**.
 
-It also highlights supplier performance and the products that need to be reordered. :contentReference[oaicite:5]{index=5}
-
-The executive summary at the bottom of the page brings the main findings together so that someone can understand the current inventory situation without going through every report page.
+The executive summary brings the main findings together so that someone can understand the current inventory situation without going through every report page.
 
 ![Inventory Insights](images/inventory-insights.png)
 
@@ -216,9 +204,9 @@ The executive summary at the bottom of the page brings the main findings togethe
 
 Data validation was an important part of the project.
 
-I did not want to build the visuals and simply assume the underlying numbers were correct. The stock movements were checked against the running inventory balance and the calculations were tested across the reporting period.
+Before finalising the report, I checked the stock movements against the running inventory balance and tested the calculations across the reporting period.
 
-During validation, several issues were identified in the data:
+During validation, several issues were identified:
 
 - A running balance was repeating an incorrect figure.
 - A full month of sales was missing from the transaction ledger.
@@ -226,25 +214,27 @@ During validation, several issues were identified in the data:
 
 Each issue was traced back to its source and corrected before the final report was completed.
 
-This process helped make sure the dashboard was based on data that could be checked rather than simply presented.
+This helped ensure that the dashboard was based on data that had been checked rather than simply presented.
 
 ---
 
-# What I Built
+# Technical Work
 
-The project involved several stages of the analytics process:
+The project involved:
 
-- Preparing and cleaning the source data
-- Transforming data with Power Query
-- Building the inventory data model
-- Creating Excel calculations
-- Developing DAX measures
-- Creating inventory and supplier KPIs
-- Building reorder calculations
-- Validating stock movements
-- Designing the Power BI report
-- Adding filters and interactive views
-- Creating written inventory insights
+- Data preparation and cleaning
+- Data validation
+- Power Query transformations
+- Excel calculations
+- Data modelling
+- DAX measures
+- Power BI relationships
+- Inventory KPIs
+- Reorder calculations
+- Supplier performance analysis
+- Transaction-level reconciliation
+- Interactive dashboard design
+- Written inventory insights
 
 ---
 
@@ -292,10 +282,8 @@ Used to create calculated measures and implement the business logic behind the i
 
 # Project Objective
 
-The purpose of this project was not simply to create an inventory dashboard.
+The purpose of this project was to connect inventory data to practical business questions.
 
-I wanted to build a reporting system that connects the underlying transactions to the questions someone managing inventory would actually need to answer.
+The report starts with the overall inventory position, allows users to investigate individual products and transactions, compares supplier performance, identifies products that need to be reordered and brings the main findings together in plain language.
 
-The report starts with the overall inventory position, allows users to investigate individual products and transactions, compares supplier performance, identifies products that need to be reordered and then brings the main findings together in plain language.
-
-The result is a system that helps turn inventory data into something that can be understood and acted on.
+The result is an interactive reporting system that helps turn inventory data into information that can support stock and purchasing decisions.
