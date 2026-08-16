@@ -5,8 +5,11 @@
 ### Turning procurement data into clear decisions about spending, suppliers, risk and savings.
 
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
 ![DAX](https://img.shields.io/badge/DAX-2C2C2C?style=for-the-badge)
+
 ![Status](https://img.shields.io/badge/Status-Complete-16A34A?style=for-the-badge)
 
 **FMCG Distribution | January to June 2026 | NGN (₦)**
