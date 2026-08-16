@@ -83,7 +83,6 @@ Total procurement spend is **₦30.75M** against a **₦31.66M budget**, represe
 
 Although total spending is below budget, the category breakdown shows that **3 of 6 categories are already over budget**.
 
-### Dashboard Preview
 
 ![Procurement Overview](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Overview.PNG)
 
@@ -109,7 +108,6 @@ Spending reached its highest point in **April at ₦6.2M**, making it the only m
 
 At category level, **Cleaning & Hygiene and Office & Admin** are the most significant areas of overspending.
 
-### Dashboard Preview
 
 ![Spend vs Budget](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Spend%20vs%20Budget.PNG)
 
@@ -141,7 +139,6 @@ Packaging and Cleaning & Hygiene also recorded significant price increases since
 
 This suggests that supplier pricing needs attention, particularly in categories where higher prices are contributing to budget pressure.
 
-### Dashboard Preview
 
 ![Category Performance](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Category%20Performance.PNG)
 
@@ -173,7 +170,6 @@ Average on time delivery is **87.4%**, with an average lead time of **5.8 days**
 
 These suppliers should be reviewed to determine whether delivery terms or supplier allocation need to change.
 
-### Dashboard Preview
 
 ![Supplier Performance](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Supplier%20Performance.PNG)
 
@@ -204,8 +200,6 @@ It includes:
 The top three suppliers together account for **47.7% of total procurement spend**.
 
 Because Faj Hygiene Products Ltd is also flagged for review, identifying a qualified secondary supplier would help reduce dependency and protect supply continuity.
-
-### Dashboard Preview
 
 ![Supplier Risk and Concentration](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Suppliers%20Risk.PNG)
 
@@ -239,8 +233,6 @@ The strongest opportunities include **Hand Sanitizer 5L, Fruit Juice Concentrate
 
 The Hand Sanitizer opportunity is particularly useful because changing the supplier could both reduce cost and lower dependence on **Faj Hygiene Products Ltd**.
 
-### Dashboard Preview
-
 ![Cost and Savings Opportunities](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Cost%20%26%20Saving.PNG)
 
 
@@ -257,6 +249,7 @@ The dashboard uncovered several issues that are not immediately obvious from tot
 | **Supplier Risk** | Faj Hygiene Products holds 22.7% of spend | Identify a secondary supplier |
 | **Savings** | ₦20,497 in potential savings identified | Prioritise the strongest supplier switching opportunities |
 
+![Insights](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Insights.PNG)
 
 # Problem Solving Approach
 
