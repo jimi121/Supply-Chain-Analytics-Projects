@@ -348,7 +348,7 @@ The project uses a fictional Nigerian FMCG distribution company with:
 The company, supplier and product names are fictional. The dataset is fixed for reproducibility.
 
 
-# Project Structure
+<!-- # Project Structure
 
 ```text
 Procurement-Decision-Intelligence-Dashboard/
@@ -373,6 +373,8 @@ Procurement-Decision-Intelligence-Dashboard/
 │
 └── README.md
 ```
+-->
+
 # Interactive Power BI Report
 
 ### Interactive Power BI Report
