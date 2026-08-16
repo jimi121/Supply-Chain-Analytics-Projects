@@ -16,7 +16,6 @@
 
 </div>
 
----
 
 ## Project Overview
 
@@ -34,7 +33,6 @@ The objective of this project was to turn procurement data into a practical deci
 
 The dashboard connects these findings to practical actions so that users can move from **seeing the numbers to understanding what needs to be done**.
 
----
 
 #  Business Problem
 
@@ -53,21 +51,11 @@ The goal was not simply to create charts.
 
 > **The goal was to turn procurement data into information that can support better purchasing and supplier decisions.**
 
----
-# Interactive Power BI Report
-
-Explore the dashboard interactively and see how the analysis connects procurement spending, budget performance, supplier performance, risk and savings opportunities.
-
-[**View the Interactive Power BI Dashboard**](PLACEHOLDER_LINK_TO_PUBLISHED_REPORT)
-
----
 #  Dashboard
 
 The dashboard is divided into six pages. Each page answers a different business question.
 
-[**View the Interactive Power BI Dashboard**](PLACEHOLDER_LINK_TO_PUBLISHED_REPORT)
-
----
+[**View the Interactive Power BI Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiYTc4NDM0MjctNzM0MS00NmFhLTg4ZGUtNWY5YjExNjk4ZTFmIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9)
 
 
 ## 1. Procurement Overview
@@ -97,9 +85,7 @@ Although total spending is below budget, the category breakdown shows that **3 o
 
 ### Dashboard Preview
 
-![Procurement Overview](images/procurement-overview.png)
-
----
+![Procurement Overview](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Overview.PNG)
 
 ## 2. Spend vs Budget
 
@@ -125,9 +111,8 @@ At category level, **Cleaning & Hygiene and Office & Admin** are the most signif
 
 ### Dashboard Preview
 
-![Spend vs Budget](images/spend-vs-budget.png)
+![Spend vs Budget](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Spend%20vs%20Budget.PNG)
 
----
 
 ## 3. Category Performance
 
@@ -158,9 +143,8 @@ This suggests that supplier pricing needs attention, particularly in categories 
 
 ### Dashboard Preview
 
-![Category Performance](images/category-performance.png)
+![Category Performance](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Category%20Performance.PNG)
 
----
 
 ## 4. Supplier Performance
 
@@ -191,9 +175,8 @@ These suppliers should be reviewed to determine whether delivery terms or suppli
 
 ### Dashboard Preview
 
-![Supplier Performance](images/supplier-performance.png)
+![Supplier Performance](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Supplier%20Performance.PNG)
 
----
 
 ## 5. Supplier Risk and Concentration
 
@@ -224,9 +207,7 @@ Because Faj Hygiene Products Ltd is also flagged for review, identifying a quali
 
 ### Dashboard Preview
 
-![Supplier Risk and Concentration](images/supplier-risk.png)
-
----
+![Supplier Risk and Concentration](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Suppliers%20Risk.PNG)
 
 ## 6. Cost and Savings Opportunities
 
@@ -260,9 +241,8 @@ The Hand Sanitizer opportunity is particularly useful because changing the suppl
 
 ### Dashboard Preview
 
-![Cost and Savings Opportunities](images/cost-savings.png)
+![Cost and Savings Opportunities](https://github.com/jimi121/Supply-Chain-Analytics-Projects/blob/main/Procurement%20Decision%20Intelligence%20Dashboard/Image/Cost%20%26%20Saving.PNG)
 
----
 
 # Key Business Insights
 
@@ -277,7 +257,6 @@ The dashboard uncovered several issues that are not immediately obvious from tot
 | **Supplier Risk** | Faj Hygiene Products holds 22.7% of spend | Identify a secondary supplier |
 | **Savings** | ₦20,497 in potential savings identified | Prioritise the strongest supplier switching opportunities |
 
----
 
 # Problem Solving Approach
 
@@ -306,8 +285,6 @@ Look beyond the headline numbers to identify the reasons behind overspending, su
 ### 6. Recommend
 
 Translate the findings into practical actions that procurement teams can take.
-
----
 
 # Tools and Skills
 
@@ -348,8 +325,6 @@ Used to create business measures and logic for:
 - Data Storytelling
 - Decision Support
 
----
-
 # Project Results
 
 | Metric | Result |
@@ -365,7 +340,6 @@ Used to create business measures and logic for:
 | Products With Lower Cost Alternatives | **10** |
 | Identified Savings Opportunity | **₦20,497** |
 
----
 
 # Data
 
@@ -380,7 +354,6 @@ The project uses a fictional Nigerian FMCG distribution company with:
 
 The company, supplier and product names are fictional. The dataset is fixed for reproducibility.
 
----
 
 # Project Structure
 
@@ -411,11 +384,10 @@ Procurement-Decision-Intelligence-Dashboard/
 
 ### Interactive Power BI Report
 
-[**View the Interactive Power BI Dashboard**](PLACEHOLDER_LINK_TO_PUBLISHED_REPORT)
+[**View the Interactive Power BI Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiYTc4NDM0MjctNzM0MS00NmFhLTg4ZGUtNWY5YjExNjk4ZTFmIiwidCI6IjYyMGJjNTRiLTE2Y2YtNDhjNy1iNWE3LTY0ZmFkNmI5OTdhZiJ9)
 
----
 
-# Project Files
+<!-- # Project Files
 
 ### Excel Dataset
 
@@ -425,8 +397,7 @@ Procurement-Decision-Intelligence-Dashboard/
 
 [**Download the Power BI File**](PLACEHOLDER_POWER_BI_FILE_LINK)
 
-
----
+-->
 
 ## Disclaimer
 
